@@ -91,17 +91,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Analyzer Include="..\packages\xunit.analyzers.0.7.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\ESFA.DC.ILR.Model.Interface\ESFA.DC.ILR.Model.Interface.csproj">
-      <Project>{2b9e211c-f0df-46ff-b1c6-f29a50827276}</Project>
+      <Project>{c8899812-0925-44d7-a34a-3f2c4afb7307}</Project>
       <Name>ESFA.DC.ILR.Model.Interface</Name>
     </ProjectReference>
     <ProjectReference Include="..\ESFA.DC.ILR.Model\ESFA.DC.ILR.Model.csproj">
-      <Project>{869dcaa7-fbbb-49d0-9efd-8fa234918b97}</Project>
+      <Project>{6674759e-2cb2-4749-8d07-30811d70de44}</Project>
       <Name>ESFA.DC.ILR.Model</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\packages\xunit.analyzers.0.7.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
