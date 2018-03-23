@@ -8,18 +8,18 @@
         long? SOC2000Nullable { get; }
         long? SECNullable { get; }
         string UCASAPPID { get; }
-        long? TYPEYRNullable { get; }
-        long? MODESTUDNullable { get; }
-        long? FUNDLEVNullable { get; }
-        long? FUNDCOMPNullable { get; }
+        int TYPEYR { get; }
+        int MODESTUD { get; }
+        int FUNDLEV { get; }
+        int FUNDCOMP { get; }
         decimal? STULOADNullable { get; }
-        long? YEARSTUNullable { get; }
-        long? MSTUFEENullable { get; }
+        int YEARSTU { get; }
+        int MSTUFEE { get; }
         decimal? PCOLABNullable { get; }
         decimal? PCFLDCSNullable { get; }
         decimal? PCSLDCSNullable { get; }
         decimal? PCTLDCSNullable { get; }
-        long? SPECFEENullable { get; }
+        int SPECFEE { get; }
         long? NETFEENullable { get; }
         long? GROSSFEENullable { get; }
         string DOMICILE { get; }

@@ -5,8 +5,8 @@ namespace ESFA.DC.ILR.Model.Interface
     public interface IAppFinRecord
     {
         string AFinType { get; }
-        long? AFinCodeNullable { get; }
-        DateTime? AFinDateNullable { get; }
-        long? AFinAmountNullable { get; }        
+        int AFinCode { get; }
+        DateTime AFinDate { get; }
+        int AFinAmount { get; }        
     }
 }

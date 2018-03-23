@@ -1,1 +1,1 @@
-xsd ILR-2017-18.xsd /classes /namespace:"ESFA.DC.ILR.Model"
+xsd ILR-2018-19.xsd /classes /namespace:"ESFA.DC.ILR.Model"

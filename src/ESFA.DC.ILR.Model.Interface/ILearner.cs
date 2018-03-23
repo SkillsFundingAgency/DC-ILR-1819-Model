@@ -13,12 +13,12 @@ namespace ESFA.DC.ILR.Model.Interface
         long? ALSCostNullable { get; }
         DateTime? DateOfBirthNullable { get; }
         string Email { get; }
-        long? EthnicityNullable { get; }
+        int Ethnicity { get; }
         string EngGrade { get; }
         string FamilyName { get; }
         string GivenNames { get; }
         string LearnRefNumber { get; }
-        long? LLDDHealthProbNullable { get; }
+        int LLDDHealthProb { get; }
         string MathGrade { get; }
         string NINumber { get; }
         long? PlanEEPHoursNullable { get; }
@@ -29,16 +29,16 @@ namespace ESFA.DC.ILR.Model.Interface
         string PrevLearnRefNumber { get; }
         long? PrevUKPRNNullable { get; }
         long? PriorAttainNullable { get; }
-        long? ULNNullable { get; }
+        long ULN { get; }
         string Sex { get; }
         string TelNo { get; }
 
+        ILearnerHE LearnerHEEntity { get; }
         IReadOnlyCollection<IContactPreference> ContactPreferences { get; }
         IReadOnlyCollection<ILearnerFAM> LearnerFAMs { get; }
         IReadOnlyCollection<ILearningDelivery> LearningDeliveries { get; }
         IReadOnlyCollection<ILLDDAndHealthProblem> LLDDAndHealthProblems { get; }
         IReadOnlyCollection<IProviderSpecLearnerMonitoring> ProviderSpecLearnerMonitorings { get; }
         IReadOnlyCollection<ILearnerEmploymentStatus> LearnerEmploymentStatuses { get; }
-        IReadOnlyCollection<ILearnerHE> LearnerHEs { get; }
     }
 }

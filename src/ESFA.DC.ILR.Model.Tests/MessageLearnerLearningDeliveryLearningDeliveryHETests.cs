@@ -8,73 +8,25 @@ namespace ESFA.DC.ILR.Model.Tests
         [Fact]
         public void SOC2000Nullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(l => l.SOC2000, Long(), l => l.SOC2000Specified, l => l.SOC2000Nullable);
+            TestNullableSpecifiedTrue(l => l.SOC2000, Int(), l => l.SOC2000Specified, l => l.SOC2000Nullable);
         }
 
         [Fact]
         public void SOC2000Nullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(l => l.SOC2000, Long(), l => l.SOC2000Specified, l => l.SOC2000Nullable);
+            TestNullableSpecifiedFalse(l => l.SOC2000, Int(), l => l.SOC2000Specified, l => l.SOC2000Nullable);
         }
 
         [Fact]
         public void SECNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(l => l.SEC, Long(), l => l.SECSpecified, l => l.SECNullable);
+            TestNullableSpecifiedTrue(l => l.SEC, Int(), l => l.SECSpecified, l => l.SECNullable);
         }
 
         [Fact]
         public void SECNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(l => l.SEC, Long(), l => l.SECSpecified, l => l.SECNullable);
-        }
-
-        [Fact]
-        public void TYPEYRNullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(l => l.TYPEYR, Long(), l => l.TYPEYRSpecified, l => l.TYPEYRNullable);
-        }
-
-        [Fact]
-        public void TYPEYRNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(l => l.TYPEYR, Long(), l => l.TYPEYRSpecified, l => l.TYPEYRNullable);
-        }
-        
-        [Fact]
-        public void MODESTUDNullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(l => l.MODESTUD, Long(), l => l.MODESTUDSpecified, l => l.MODESTUDNullable);
-        }
-
-        [Fact]
-        public void MODESTUDNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(l => l.MODESTUD, Long(), l => l.MODESTUDSpecified, l => l.MODESTUDNullable);
-        }
-
-        [Fact]
-        public void FUNDLEVNullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(l => l.FUNDLEV, Long(), l => l.FUNDLEVSpecified, l => l.FUNDLEVNullable);
-        }
-
-        [Fact]
-        public void FUNDLEVNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(l => l.FUNDLEV, Long(), l => l.FUNDLEVSpecified, l => l.FUNDLEVNullable);
-        }
-
-        [Fact]
-        public void FUNDCOMPNullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(l => l.FUNDCOMP, Long(), l => l.FUNDCOMPSpecified, l => l.FUNDCOMPNullable);
-        }
-
-        [Fact]
-        public void FUNDCOMPNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(l => l.FUNDCOMP, Long(), l => l.FUNDCOMPSpecified, l => l.FUNDCOMPNullable);
+            TestNullableSpecifiedFalse(l => l.SEC, Int(), l => l.SECSpecified, l => l.SECNullable);
         }
 
         [Fact]
@@ -87,30 +39,6 @@ namespace ESFA.DC.ILR.Model.Tests
         public void STULOADNullable_Specified_False()
         {
             TestNullableSpecifiedFalse(l => l.STULOAD, Long(), l => l.STULOADSpecified, l => l.STULOADNullable);
-        }
-
-        [Fact]
-        public void YEARSTUNullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(l => l.YEARSTU, Long(), l => l.YEARSTUSpecified, l => l.YEARSTUNullable);
-        }
-
-        [Fact]
-        public void YEARSTUNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(l => l.YEARSTU, Long(), l => l.YEARSTUSpecified, l => l.YEARSTUNullable);
-        }
-
-        [Fact]
-        public void MSTUFEENullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(l => l.MSTUFEE, Long(), l => l.MSTUFEESpecified, l => l.MSTUFEENullable);
-        }
-
-        [Fact]
-        public void MSTUFEENullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(l => l.MSTUFEE, Long(), l => l.MSTUFEESpecified, l => l.MSTUFEENullable);
         }
 
         [Fact]
@@ -162,51 +90,39 @@ namespace ESFA.DC.ILR.Model.Tests
         }
 
         [Fact]
-        public void SPECFEENullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(l => l.SPECFEE, Long(), l => l.SPECFEESpecified, l => l.SPECFEENullable);
-        }
-
-        [Fact]
-        public void SPECFEENullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(l => l.SPECFEE, Long(), l => l.SPECFEESpecified, l => l.SPECFEENullable);
-        }
-
-        [Fact]
         public void NETFEENullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(l => l.NETFEE, Long(), l => l.NETFEESpecified, l => l.NETFEENullable);
+            TestNullableSpecifiedTrue(l => l.NETFEE, Int(), l => l.NETFEESpecified, l => l.NETFEENullable);
         }
 
         [Fact]
         public void NETFEENullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(l => l.NETFEE, Long(), l => l.NETFEESpecified, l => l.NETFEENullable);
+            TestNullableSpecifiedFalse(l => l.NETFEE, Int(), l => l.NETFEESpecified, l => l.NETFEENullable);
         }
 
         [Fact]
         public void ELQNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(l => l.ELQ, Long(), l => l.ELQSpecified, l => l.ELQNullable);
+            TestNullableSpecifiedTrue(l => l.ELQ, Int(), l => l.ELQSpecified, l => l.ELQNullable);
         }
 
         [Fact]
         public void ELQNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(l => l.ELQ, Long(), l => l.ELQSpecified, l => l.ELQNullable);
+            TestNullableSpecifiedFalse(l => l.ELQ, Int(), l => l.ELQSpecified, l => l.ELQNullable);
         }
 
         [Fact]
         public void GROSSFEENullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(l => l.GROSSFEE, Long(), l => l.GROSSFEESpecified, l => l.GROSSFEENullable);
+            TestNullableSpecifiedTrue(l => l.GROSSFEE, Int(), l => l.GROSSFEESpecified, l => l.GROSSFEENullable);
         }
 
         [Fact]
         public void GROSSFEENullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(l => l.GROSSFEE, Long(), l => l.GROSSFEESpecified, l => l.GROSSFEENullable);
+            TestNullableSpecifiedFalse(l => l.GROSSFEE, Int(), l => l.GROSSFEESpecified, l => l.GROSSFEENullable);
         }        
     }
 }

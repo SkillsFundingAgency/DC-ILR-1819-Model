@@ -3,6 +3,6 @@
     public interface IEmploymentStatusMonitoring
     {        
         string ESMType { get; }
-        long? ESMCodeNullable { get; }
+        int ESMCode { get; }
     }
 }

@@ -2,7 +2,7 @@
 {
     public interface ILearnerHEFinancialSupport
     {
-        long? FINTYPENullable { get; }
-        long? FINAMOUNTNullable { get; }
+        int FINTYPE { get; }
+        int FINAMOUNT { get; }
     }
 }

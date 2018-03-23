@@ -5,8 +5,8 @@ namespace ESFA.DC.ILR.Model.Interface
 {
     public interface ILearnerEmploymentStatus
     {
-        long? EmpStatNullable { get; }
-        DateTime? DateEmpStatAppNullable { get; }
+        int EmpStat { get; }
+        DateTime DateEmpStatApp { get; }
         long? EmpIdNullable { get; }        
 
         IReadOnlyCollection<IEmploymentStatusMonitoring> EmploymentStatusMonitorings { get; }

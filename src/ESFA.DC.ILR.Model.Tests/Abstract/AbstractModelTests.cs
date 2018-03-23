@@ -12,6 +12,11 @@ namespace ESFA.DC.ILR.Model.Tests.Abstract
             return new DateTime(2018, 1, 1);
         }
 
+        protected int Int()
+        {
+            return 1234567890;
+        }
+
         protected long Long()
         {
             return 12345678910;

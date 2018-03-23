@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>ESFA.DC.ILR.1718.Model</id>
+    <id>ESFA.DC.ILR.1819.Model</id>
     <version>0.1.0</version>    
     <authors>DC</authors>
     <owners>ESFA</owners>
-    <licenseUrl>https://github.com/SkillsFundingAgency/DC-ILR-1718-Model/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/SkillsFundingAgency/DC-ILR-1718-Model</projectUrl>
+    <licenseUrl>https://github.com/SkillsFundingAgency/DC-ILR-1819-Model/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SkillsFundingAgency/DC-ILR-1819-Model</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>ILR 1718 Model XSD Generated Classes and Partial Class Interface Implementations.</description>
+    <description>ILR 1819 Model XSD Generated Classes and Partial Class Interface Implementations.</description>
     <releaseNotes />
     <copyright>Copyright 2018</copyright>
-    <tags>ILR 1718 ILR1718 Model</tags>
+    <tags>ILR 1819 ILR1819 Model</tags>
   </metadata>
 </package>

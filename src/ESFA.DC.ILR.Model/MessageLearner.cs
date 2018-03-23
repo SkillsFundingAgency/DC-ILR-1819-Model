@@ -24,19 +24,7 @@ namespace ESFA.DC.ILR.Model
         {
             get { return dateOfBirthFieldSpecified ? (DateTime?)dateOfBirthField : null; }
         }
-
-        [XmlIgnore]
-        public long? EthnicityNullable
-        {
-            get { return ethnicityFieldSpecified ? (long?)ethnicityField : null; }
-        }
-
-        [XmlIgnore]
-        public long? LLDDHealthProbNullable
-        {
-            get { return lLDDHealthProbFieldSpecified ? (long?)lLDDHealthProbField : null; }
-        }
-
+        
         [XmlIgnore]
         public long? PlanEEPHoursNullable
         {
@@ -68,12 +56,6 @@ namespace ESFA.DC.ILR.Model
         }
         
         [XmlIgnore]
-        public long? ULNNullable
-        {
-            get { return uLNFieldSpecified ? (long?)uLNField : null; }
-        }
-
-        [XmlIgnore]
         public IReadOnlyCollection<IContactPreference> ContactPreferences
         {
             get { return contactPreferenceField; }
@@ -92,7 +74,7 @@ namespace ESFA.DC.ILR.Model
         }
 
         [XmlIgnore]
-        public IReadOnlyCollection<ILearnerHE> LearnerHEs
+        public ILearnerHE LearnerHEEntity
         {
             get { return learnerHEField; }
         }

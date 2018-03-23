@@ -41,8 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extension\EnumExtensions.cs" />
-    <Compile Include="ILR-2017-18.cs">
-      <DependentUpon>ILR-2017-18.xsd</DependentUpon>
+    <Compile Include="ILR-2018-19.cs">
+      <DependentUpon>ILR-2018-19.xsd</DependentUpon>
     </Compile>
     <Compile Include="Message.cs" />
     <Compile Include="MessageHeader.cs" />
@@ -72,7 +72,7 @@
   <ItemGroup>
     <None Include="ESFA.DC.ILR.Model.nuspec" />
     <None Include="GenerateModel.bat" />
-    <None Include="ILR-2017-18.xsd">
+    <None Include="ILR-2018-19.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

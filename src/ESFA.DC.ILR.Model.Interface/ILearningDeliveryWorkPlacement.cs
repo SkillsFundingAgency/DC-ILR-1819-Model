@@ -4,10 +4,10 @@ namespace ESFA.DC.ILR.Model.Interface
 {
     public interface ILearningDeliveryWorkPlacement
     {
-        DateTime? WorkPlaceStartDateNullable { get; }
+        DateTime WorkPlaceStartDate { get; }
         DateTime? WorkPlaceEndDateNullable { get; }
-        long? WorkPlaceHoursNullable { get; }
-        long? WorkPlaceModeNullable { get; }
+        int WorkPlaceHours { get; }
+        int WorkPlaceMode { get; }
         long? WorkPlaceEmpIdNullable { get; }
     }
 }

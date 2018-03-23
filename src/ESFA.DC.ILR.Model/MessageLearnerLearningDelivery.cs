@@ -20,33 +20,9 @@ namespace ESFA.DC.ILR.Model
         }
 
         [XmlIgnore]
-        public long? AimSeqNumberNullable
-        {
-            get { return aimSeqNumberFieldSpecified ? (long?)aimSeqNumberField : null;  }
-        }
-
-        [XmlIgnore]
-        public long? AimTypeNullable
-        {
-            get { return aimTypeFieldSpecified ? (long?)aimTypeField : null; }
-        }
-
-        [XmlIgnore]
-        public long? CompStatusNullable
-        {
-            get { return compStatusFieldSpecified ? (long?)compStatusField : null; }
-        }
-
-        [XmlIgnore]
         public long? EmpOutcomeNullable
         {
             get { return empOutcomeFieldSpecified ? (long?)empOutcomeField : null; }
-        }
-
-        [XmlIgnore]
-        public long? FundModelNullable
-        {
-            get { return fundModelFieldSpecified ? (long?)fundModelField : null; }
         }
 
         [XmlIgnore]
@@ -54,18 +30,6 @@ namespace ESFA.DC.ILR.Model
         {
             get { return fworkCodeFieldSpecified ? (long?)fworkCodeField : null; }
         }        
-
-        [XmlIgnore]
-        public DateTime? LearnStartDateNullable
-        {
-            get { return learnStartDateFieldSpecified ? (DateTime?)learnStartDateField : null; }
-        }
-
-        [XmlIgnore]
-        public DateTime? LearnPlanEndDateNullable
-        {
-            get { return learnPlanEndDateFieldSpecified ? (DateTime?)learnPlanEndDateField : null; }
-        }
 
         [XmlIgnore]
         public DateTime? LearnActEndDateNullable
@@ -126,7 +90,14 @@ namespace ESFA.DC.ILR.Model
         {
             get { return withdrawReasonFieldSpecified ? (long?)withdrawReasonField : null;  }
         }
-                
+         
+        [XmlIgnore]
+        public ILearningDeliveryHE LearningDeliveryHEEntity
+        {
+            get { return learningDeliveryHEField; }
+        }
+
+        [XmlIgnore]
         public IReadOnlyCollection<IAppFinRecord> AppFinRecords
         {
             get { return appFinRecordField; }
@@ -136,11 +107,6 @@ namespace ESFA.DC.ILR.Model
         public IReadOnlyCollection<ILearningDeliveryFAM> LearningDeliveryFAMs
         {
             get { return learningDeliveryFAMField; }
-        }
-
-        public IReadOnlyCollection<ILearningDeliveryHE> LearningDeliveryHEs
-        {
-            get { return learningDeliveryHEField; }
         }
 
         public IReadOnlyCollection<ILearningDeliveryWorkPlacement> LearningDeliveryWorkPlacements

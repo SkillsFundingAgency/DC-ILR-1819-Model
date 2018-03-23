@@ -9,13 +9,13 @@ namespace ESFA.DC.ILR.Model.Tests
         [Fact]
         public void TTACCOMNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(l => l.TTACCOM, Long(), l => l.TTACCOMSpecified, l => l.TTACCOMNullable);
+            TestNullableSpecifiedTrue(l => l.TTACCOM, Int(), l => l.TTACCOMSpecified, l => l.TTACCOMNullable);
         }
 
         [Fact]
         public void TTACCOMNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(l => l.TTACCOM, Long(), l => l.TTACCOMSpecified, l => l.TTACCOMNullable);
+            TestNullableSpecifiedFalse(l => l.TTACCOM, Int(), l => l.TTACCOMSpecified, l => l.TTACCOMNullable);
         }
         
         [Fact]

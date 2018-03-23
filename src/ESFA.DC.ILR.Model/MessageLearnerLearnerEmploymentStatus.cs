@@ -6,16 +6,6 @@ namespace ESFA.DC.ILR.Model
 {
     public partial class MessageLearnerLearnerEmploymentStatus : ILearnerEmploymentStatus
     {
-        public long? EmpStatNullable
-        {
-            get { return empStatFieldSpecified ? (long?)empStatField : null; }
-        }
-
-        public DateTime? DateEmpStatAppNullable
-        {
-            get { return dateEmpStatAppFieldSpecified ? (DateTime?)dateEmpStatAppField : null; }
-        }
-
         public long? EmpIdNullable
         {
             get { return empIdFieldSpecified ? (long?)empIdField : null; }

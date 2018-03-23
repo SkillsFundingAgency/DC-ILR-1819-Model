@@ -7,18 +7,6 @@ namespace ESFA.DC.ILR.Model.Tests
     public class MessageLearnerDestinationandProgressionTests : AbstractModelTests<MessageLearnerDestinationandProgression>
     {
         [Fact]
-        public void ULNNullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(l => l.ULN, Long(), l => l.ULNSpecified, l => l.ULNNullable);
-        }
-
-        [Fact]
-        public void ESMCodeNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(l => l.ULN, Long(), l => l.ULNSpecified, l => l.ULNNullable);
-        }
-
-        [Fact]
         public void DPOutcomes()
         {
             var learnerDestinationAndProgression = new MessageLearnerDestinationandProgression()

@@ -2,7 +2,7 @@
 {
     public interface ILLDDAndHealthProblem
     {
-        long? LLDDCatNullable { get; }
+        int LLDDCat { get; }
 
         long? PrimaryLLDDNullable { get; }
     }

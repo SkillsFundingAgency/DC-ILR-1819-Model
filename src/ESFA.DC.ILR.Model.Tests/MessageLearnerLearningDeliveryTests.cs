@@ -1,6 +1,5 @@
 ﻿using ESFA.DC.ILR.Model.Tests.Abstract;
 using FluentAssertions;
-using System;
 using Xunit;
 
 namespace ESFA.DC.ILR.Model.Tests
@@ -22,85 +21,37 @@ namespace ESFA.DC.ILR.Model.Tests
         [Fact]
         public void AddHoursNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(ld => ld.AddHours, Long(), ld => ld.AddHoursSpecified, ld => ld.AddHoursNullable);
+            TestNullableSpecifiedFalse(ld => ld.AddHours, Int(), ld => ld.AddHoursSpecified, ld => ld.AddHoursNullable);
         }
 
         [Fact]
         public void AddHoursNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(ld => ld.AddHours, Long(), ld => ld.AddHoursSpecified, ld => ld.AddHoursNullable);
+            TestNullableSpecifiedTrue(ld => ld.AddHours, Int(), ld => ld.AddHoursSpecified, ld => ld.AddHoursNullable);
         }
-
-        [Fact]
-        public void AimSeqNumberNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(ld => ld.AimSeqNumber, Long(), ld => ld.AimSeqNumberSpecified, ld => ld.AimSeqNumberNullable);
-        }
-
-        [Fact]
-        public void AimSeqNumberNullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(ld => ld.AimSeqNumber, Long(), ld => ld.AimSeqNumberSpecified, ld => ld.AimSeqNumberNullable);
-        }
-
-        [Fact]
-        public void AimTypeNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(ld => ld.AimType, Long(), ld => ld.AimTypeSpecified, ld => ld.AimTypeNullable);
-        }
-
-        [Fact]
-        public void AimTypeNullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(ld => ld.AimType, Long(), ld => ld.AimTypeSpecified, ld => ld.AimTypeNullable);
-        }
-
-        [Fact]
-        public void CompStatusNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(ld => ld.CompStatus, Long(), ld => ld.CompStatusSpecified, ld => ld.CompStatusNullable);
-        }        
-
-        [Fact]
-        public void CompStatusNullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(ld => ld.CompStatus, Long(), ld => ld.CompStatusSpecified, ld => ld.CompStatusNullable);
-        }
-
+        
         [Fact]
         public void EmpOutcomeNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(ld => ld.EmpOutcome, Long(), ld => ld.EmpOutcomeSpecified, ld => ld.EmpOutcomeNullable);
+            TestNullableSpecifiedFalse(ld => ld.EmpOutcome, Int(), ld => ld.EmpOutcomeSpecified, ld => ld.EmpOutcomeNullable);
         }
 
         [Fact]
         public void EmpOutcomeNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(ld => ld.EmpOutcome, Long(), ld => ld.EmpOutcomeSpecified, ld => ld.EmpOutcomeNullable);
+            TestNullableSpecifiedTrue(ld => ld.EmpOutcome, Int(), ld => ld.EmpOutcomeSpecified, ld => ld.EmpOutcomeNullable);
         }
-
-        [Fact]
-        public void FundModelNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(ld => ld.FundModel, Long(), ld => ld.FundModelSpecified, ld => ld.CompStatusNullable);
-        }
-
-        [Fact]
-        public void FundModelNullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(ld => ld.FundModel, Long(), ld => ld.FundModelSpecified, ld => ld.FundModelNullable);
-        }
-
+        
         [Fact]
         public void FworkCodeNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(ld => ld.FworkCode, Long(), ld => ld.FworkCodeSpecified, ld => ld.FworkCodeNullable);            
+            TestNullableSpecifiedFalse(ld => ld.FworkCode, Int(), ld => ld.FworkCodeSpecified, ld => ld.FworkCodeNullable);            
         }
 
         [Fact]
         public void FworkCodeNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(ld => ld.FworkCode, Long(), ld => ld.FworkCodeSpecified, ld => ld.FworkCodeNullable);
+            TestNullableSpecifiedTrue(ld => ld.FworkCode, Int(), ld => ld.FworkCodeSpecified, ld => ld.FworkCodeNullable);
         }
 
         [Fact]
@@ -113,30 +64,6 @@ namespace ESFA.DC.ILR.Model.Tests
         public void LearnActEndDateNullable_Specified_True()
         {
             TestNullableSpecifiedTrue(ld => ld.LearnActEndDate, DateTime(), ld => ld.LearnActEndDateSpecified, ld => ld.LearnActEndDateNullable);
-        }
-
-        [Fact]
-        public void LearnPlanEndDateNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(ld => ld.LearnPlanEndDate, DateTime(), ld => ld.LearnPlanEndDateSpecified, ld => ld.LearnPlanEndDateNullable);
-        }
-
-        [Fact]
-        public void LearnPlanEndDateNullable_Specified_True()
-        {
-            TestNullableSpecifiedFalse(ld => ld.LearnPlanEndDate, DateTime(), ld => ld.LearnPlanEndDateSpecified, ld => ld.LearnPlanEndDateNullable);
-        }
-
-        [Fact]
-        public void LearnStartDateNullable_Specified_False()
-        {
-            TestNullableSpecifiedFalse(ld => ld.LearnStartDate, DateTime(), ld => ld.LearnStartDateSpecified, ld => ld.LearnStartDateNullable);       
-        }
-
-        [Fact]
-        public void LearnStartDateNullable_Specified_True()
-        {
-            TestNullableSpecifiedTrue(ld => ld.LearnStartDate, DateTime(), ld => ld.LearnStartDateSpecified, ld => ld.LearnStartDateNullable);
         }
 
         [Fact]
@@ -154,97 +81,97 @@ namespace ESFA.DC.ILR.Model.Tests
         [Fact]
         public void OtherFundAdjNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(ld => ld.OtherFundAdj, Long(), ld => ld.OtherFundAdjSpecified, ld => ld.OtherFundAdjNullable);
+            TestNullableSpecifiedFalse(ld => ld.OtherFundAdj, Int(), ld => ld.OtherFundAdjSpecified, ld => ld.OtherFundAdjNullable);
         }
 
         [Fact]
         public void OtherFundAdjNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(ld => ld.OtherFundAdj, Long(), ld => ld.OtherFundAdjSpecified, ld => ld.OtherFundAdjNullable);
+            TestNullableSpecifiedTrue(ld => ld.OtherFundAdj, Int(), ld => ld.OtherFundAdjSpecified, ld => ld.OtherFundAdjNullable);
         }
 
         [Fact]
         public void OutcomeNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(ld => ld.Outcome, Long(), ld => ld.OutcomeSpecified, ld => ld.OutcomeNullable);
+            TestNullableSpecifiedFalse(ld => ld.Outcome, Int(), ld => ld.OutcomeSpecified, ld => ld.OutcomeNullable);
         }
 
         [Fact]
         public void OutcomeNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(ld => ld.Outcome, Long(), ld => ld.OutcomeSpecified, ld => ld.OutcomeNullable);
+            TestNullableSpecifiedTrue(ld => ld.Outcome, Int(), ld => ld.OutcomeSpecified, ld => ld.OutcomeNullable);
         }
 
         [Fact]
         public void PartnerUKPRNNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(ld => ld.PartnerUKPRN, Long(), ld => ld.PartnerUKPRNSpecified, ld => ld.PartnerUKPRNNullable);
+            TestNullableSpecifiedFalse(ld => ld.PartnerUKPRN, Int(), ld => ld.PartnerUKPRNSpecified, ld => ld.PartnerUKPRNNullable);
         }
 
         [Fact]
         public void PartnerUKPRNNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(ld => ld.PartnerUKPRN, Long(), ld => ld.PartnerUKPRNSpecified, ld => ld.PartnerUKPRNNullable);
+            TestNullableSpecifiedTrue(ld => ld.PartnerUKPRN, Int(), ld => ld.PartnerUKPRNSpecified, ld => ld.PartnerUKPRNNullable);
         }
 
         [Fact]
         public void PriorLearnFundAdjNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(ld => ld.PriorLearnFundAdj, Long(), ld => ld.PriorLearnFundAdjSpecified, ld => ld.PriorLearnFundAdjNullable);
+            TestNullableSpecifiedFalse(ld => ld.PriorLearnFundAdj, Int(), ld => ld.PriorLearnFundAdjSpecified, ld => ld.PriorLearnFundAdjNullable);
         }
 
         [Fact]
         public void PriorLearnFundAdjNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(ld => ld.PriorLearnFundAdj, Long(), ld => ld.PriorLearnFundAdjSpecified, ld => ld.PriorLearnFundAdjNullable);
+            TestNullableSpecifiedTrue(ld => ld.PriorLearnFundAdj, Int(), ld => ld.PriorLearnFundAdjSpecified, ld => ld.PriorLearnFundAdjNullable);
         }
         
         [Fact]
         public void ProgTypeNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(ld => ld.ProgType, Long(), ld => ld.ProgTypeSpecified, ld => ld.ProgTypeNullable);
+            TestNullableSpecifiedFalse(ld => ld.ProgType, Int(), ld => ld.ProgTypeSpecified, ld => ld.ProgTypeNullable);
         }
 
         [Fact]
         public void ProgTypeNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(ld => ld.ProgType, Long(), ld => ld.ProgTypeSpecified, ld => ld.ProgTypeNullable);
+            TestNullableSpecifiedTrue(ld => ld.ProgType, Int(), ld => ld.ProgTypeSpecified, ld => ld.ProgTypeNullable);
         }
         
         [Fact]
         public void PwayCodeNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(ld => ld.PwayCode, Long(), ld => ld.PwayCodeSpecified, ld => ld.PwayCodeNullable);
+            TestNullableSpecifiedFalse(ld => ld.PwayCode, Int(), ld => ld.PwayCodeSpecified, ld => ld.PwayCodeNullable);
         }
 
         [Fact]
         public void PwayCodeNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(ld => ld.PwayCode, Long(), ld => ld.PwayCodeSpecified, ld => ld.PwayCodeNullable);
+            TestNullableSpecifiedTrue(ld => ld.PwayCode, Int(), ld => ld.PwayCodeSpecified, ld => ld.PwayCodeNullable);
         }
 
         [Fact]
         public void StdCodeNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(ld => ld.StdCode, Long(), ld => ld.StdCodeSpecified, ld => ld.StdCodeNullable);
+            TestNullableSpecifiedFalse(ld => ld.StdCode, Int(), ld => ld.StdCodeSpecified, ld => ld.StdCodeNullable);
         }
 
         [Fact]
         public void StdCodeNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(ld => ld.StdCode, Long(), ld => ld.StdCodeSpecified, ld => ld.StdCodeNullable);
+            TestNullableSpecifiedTrue(ld => ld.StdCode, Int(), ld => ld.StdCodeSpecified, ld => ld.StdCodeNullable);
         }
 
         [Fact]
         public void WithdrawReasonNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(ld => ld.WithdrawReason, Long(), ld => ld.WithdrawReasonSpecified, ld => ld.WithdrawReasonNullable);
+            TestNullableSpecifiedFalse(ld => ld.WithdrawReason, Int(), ld => ld.WithdrawReasonSpecified, ld => ld.WithdrawReasonNullable);
         }
 
         [Fact]
         public void WithdrawReasonNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(ld => ld.WithdrawReason, Long(), ld => ld.WithdrawReasonSpecified, ld => ld.WithdrawReasonNullable);
+            TestNullableSpecifiedTrue(ld => ld.WithdrawReason, Int(), ld => ld.WithdrawReasonSpecified, ld => ld.WithdrawReasonNullable);
         }
 
         [Fact]
@@ -278,18 +205,14 @@ namespace ESFA.DC.ILR.Model.Tests
         }
         
         [Fact]
-        public void LearningDeliveryHEs()
+        public void LearningDeliveryHEEntity()
         {
             var learningDelivery = new MessageLearnerLearningDelivery()
             {
-                LearningDeliveryHE = new MessageLearnerLearningDeliveryLearningDeliveryHE[]
-                {
-                    new MessageLearnerLearningDeliveryLearningDeliveryHE()
-                }
+                LearningDeliveryHE = new MessageLearnerLearningDeliveryLearningDeliveryHE()
             };
 
-            learningDelivery.LearningDeliveryHEs.Should().BeSameAs(learningDelivery.LearningDeliveryHE);
-            learningDelivery.LearningDeliveryHEs.Should().HaveCount(1);
+            learningDelivery.LearningDeliveryHEEntity.Should().BeSameAs(learningDelivery.LearningDeliveryHE);
         }
         
         [Fact]

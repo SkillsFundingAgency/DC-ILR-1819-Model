@@ -20,8 +20,8 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="SFA/ILR/2017-18", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="ESFA/ILR/2018-19", IsNullable=false)]
     public partial class Message {
         
         private MessageHeader headerField;
@@ -93,7 +93,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageHeader {
         
         private MessageHeaderCollectionDetails collectionDetailsField;
@@ -126,7 +126,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageHeaderCollectionDetails {
         
         private MessageHeaderCollectionDetailsCollection collectionField;
@@ -170,7 +170,7 @@ namespace ESFA.DC.ILR.Model {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public enum MessageHeaderCollectionDetailsCollection {
         
         /// <remarks/>
@@ -180,12 +180,12 @@ namespace ESFA.DC.ILR.Model {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public enum MessageHeaderCollectionDetailsYear {
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlEnumAttribute("1718")]
-        Item1718,
+        [System.Xml.Serialization.XmlEnumAttribute("1819")]
+        Item1819,
     }
     
     /// <remarks/>
@@ -193,7 +193,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageHeaderSource {
         
         private MessageHeaderSourceProtectiveMarking protectiveMarkingField;
@@ -308,7 +308,7 @@ namespace ESFA.DC.ILR.Model {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public enum MessageHeaderSourceProtectiveMarking {
         
         /// <remarks/>
@@ -321,7 +321,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageSourceFile {
         
         private string sourceFileNameField;
@@ -428,7 +428,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearningProvider {
         
         private int uKPRNField;
@@ -449,24 +449,24 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearner {
         
         private string learnRefNumberField;
         
         private string prevLearnRefNumberField;
         
-        private long prevUKPRNField;
+        private int prevUKPRNField;
         
         private bool prevUKPRNFieldSpecified;
         
-        private long pMUKPRNField;
+        private int pMUKPRNField;
         
         private bool pMUKPRNFieldSpecified;
         
-        private long uLNField;
+        private string campIdField;
         
-        private bool uLNFieldSpecified;
+        private long uLNField;
         
         private string familyNameField;
         
@@ -476,35 +476,31 @@ namespace ESFA.DC.ILR.Model {
         
         private bool dateOfBirthFieldSpecified;
         
-        private long ethnicityField;
-        
-        private bool ethnicityFieldSpecified;
+        private int ethnicityField;
         
         private string sexField;
         
-        private long lLDDHealthProbField;
-        
-        private bool lLDDHealthProbFieldSpecified;
+        private int lLDDHealthProbField;
         
         private string nINumberField;
         
-        private long priorAttainField;
+        private int priorAttainField;
         
         private bool priorAttainFieldSpecified;
         
-        private long accomField;
+        private int accomField;
         
         private bool accomFieldSpecified;
         
-        private long aLSCostField;
+        private int aLSCostField;
         
         private bool aLSCostFieldSpecified;
         
-        private long planLearnHoursField;
+        private int planLearnHoursField;
         
         private bool planLearnHoursFieldSpecified;
         
-        private long planEEPHoursField;
+        private int planEEPHoursField;
         
         private bool planEEPHoursFieldSpecified;
         
@@ -528,6 +524,10 @@ namespace ESFA.DC.ILR.Model {
         
         private string emailField;
         
+        private int oTJHoursField;
+        
+        private bool oTJHoursFieldSpecified;
+        
         private MessageLearnerContactPreference[] contactPreferenceField;
         
         private MessageLearnerLLDDandHealthProblem[] lLDDandHealthProblemField;
@@ -538,7 +538,7 @@ namespace ESFA.DC.ILR.Model {
         
         private MessageLearnerLearnerEmploymentStatus[] learnerEmploymentStatusField;
         
-        private MessageLearnerLearnerHE[] learnerHEField;
+        private MessageLearnerLearnerHE learnerHEField;
         
         private MessageLearnerLearningDelivery[] learningDeliveryField;
         
@@ -563,7 +563,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long PrevUKPRN {
+        public int PrevUKPRN {
             get {
                 return this.prevUKPRNField;
             }
@@ -584,7 +584,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long PMUKPRN {
+        public int PMUKPRN {
             get {
                 return this.pMUKPRNField;
             }
@@ -605,23 +605,22 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
+        public string CampId {
+            get {
+                return this.campIdField;
+            }
+            set {
+                this.campIdField = value;
+            }
+        }
+        
+        /// <remarks/>
         public long ULN {
             get {
                 return this.uLNField;
             }
             set {
                 this.uLNField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ULNSpecified {
-            get {
-                return this.uLNFieldSpecified;
-            }
-            set {
-                this.uLNFieldSpecified = value;
             }
         }
         
@@ -668,23 +667,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long Ethnicity {
+        public int Ethnicity {
             get {
                 return this.ethnicityField;
             }
             set {
                 this.ethnicityField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool EthnicitySpecified {
-            get {
-                return this.ethnicityFieldSpecified;
-            }
-            set {
-                this.ethnicityFieldSpecified = value;
             }
         }
         
@@ -699,23 +687,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long LLDDHealthProb {
+        public int LLDDHealthProb {
             get {
                 return this.lLDDHealthProbField;
             }
             set {
                 this.lLDDHealthProbField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool LLDDHealthProbSpecified {
-            get {
-                return this.lLDDHealthProbFieldSpecified;
-            }
-            set {
-                this.lLDDHealthProbFieldSpecified = value;
             }
         }
         
@@ -730,7 +707,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long PriorAttain {
+        public int PriorAttain {
             get {
                 return this.priorAttainField;
             }
@@ -751,7 +728,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long Accom {
+        public int Accom {
             get {
                 return this.accomField;
             }
@@ -772,7 +749,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long ALSCost {
+        public int ALSCost {
             get {
                 return this.aLSCostField;
             }
@@ -793,7 +770,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long PlanLearnHours {
+        public int PlanLearnHours {
             get {
                 return this.planLearnHoursField;
             }
@@ -814,7 +791,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long PlanEEPHours {
+        public int PlanEEPHours {
             get {
                 return this.planEEPHoursField;
             }
@@ -935,6 +912,27 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
+        public int OTJHours {
+            get {
+                return this.oTJHoursField;
+            }
+            set {
+                this.oTJHoursField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool OTJHoursSpecified {
+            get {
+                return this.oTJHoursFieldSpecified;
+            }
+            set {
+                this.oTJHoursFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("ContactPreference")]
         public MessageLearnerContactPreference[] ContactPreference {
             get {
@@ -990,8 +988,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("LearnerHE")]
-        public MessageLearnerLearnerHE[] LearnerHE {
+        public MessageLearnerLearnerHE LearnerHE {
             get {
                 return this.learnerHEField;
             }
@@ -1017,14 +1014,12 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerContactPreference {
         
         private string contPrefTypeField;
         
-        private long contPrefCodeField;
-        
-        private bool contPrefCodeFieldSpecified;
+        private int contPrefCodeField;
         
         /// <remarks/>
         public string ContPrefType {
@@ -1037,23 +1032,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long ContPrefCode {
+        public int ContPrefCode {
             get {
                 return this.contPrefCodeField;
             }
             set {
                 this.contPrefCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ContPrefCodeSpecified {
-            get {
-                return this.contPrefCodeFieldSpecified;
-            }
-            set {
-                this.contPrefCodeFieldSpecified = value;
             }
         }
     }
@@ -1063,19 +1047,17 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerLLDDandHealthProblem {
         
-        private long lLDDCatField;
+        private int lLDDCatField;
         
-        private bool lLDDCatFieldSpecified;
-        
-        private long primaryLLDDField;
+        private int primaryLLDDField;
         
         private bool primaryLLDDFieldSpecified;
         
         /// <remarks/>
-        public long LLDDCat {
+        public int LLDDCat {
             get {
                 return this.lLDDCatField;
             }
@@ -1085,18 +1067,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool LLDDCatSpecified {
-            get {
-                return this.lLDDCatFieldSpecified;
-            }
-            set {
-                this.lLDDCatFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long PrimaryLLDD {
+        public int PrimaryLLDD {
             get {
                 return this.primaryLLDDField;
             }
@@ -1122,14 +1093,12 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerLearnerFAM {
         
         private string learnFAMTypeField;
         
-        private long learnFAMCodeField;
-        
-        private bool learnFAMCodeFieldSpecified;
+        private int learnFAMCodeField;
         
         /// <remarks/>
         public string LearnFAMType {
@@ -1142,23 +1111,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long LearnFAMCode {
+        public int LearnFAMCode {
             get {
                 return this.learnFAMCodeField;
             }
             set {
                 this.learnFAMCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool LearnFAMCodeSpecified {
-            get {
-                return this.learnFAMCodeFieldSpecified;
-            }
-            set {
-                this.learnFAMCodeFieldSpecified = value;
             }
         }
     }
@@ -1168,7 +1126,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerProviderSpecLearnerMonitoring {
         
         private string provSpecLearnMonOccurField;
@@ -1201,41 +1159,28 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerLearnerEmploymentStatus {
         
-        private long empStatField;
-        
-        private bool empStatFieldSpecified;
+        private int empStatField;
         
         private System.DateTime dateEmpStatAppField;
         
-        private bool dateEmpStatAppFieldSpecified;
-        
-        private long empIdField;
+        private int empIdField;
         
         private bool empIdFieldSpecified;
+        
+        private string agreeIdField;
         
         private MessageLearnerLearnerEmploymentStatusEmploymentStatusMonitoring[] employmentStatusMonitoringField;
         
         /// <remarks/>
-        public long EmpStat {
+        public int EmpStat {
             get {
                 return this.empStatField;
             }
             set {
                 this.empStatField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool EmpStatSpecified {
-            get {
-                return this.empStatFieldSpecified;
-            }
-            set {
-                this.empStatFieldSpecified = value;
             }
         }
         
@@ -1251,18 +1196,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool DateEmpStatAppSpecified {
-            get {
-                return this.dateEmpStatAppFieldSpecified;
-            }
-            set {
-                this.dateEmpStatAppFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long EmpId {
+        public int EmpId {
             get {
                 return this.empIdField;
             }
@@ -1283,6 +1217,16 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
+        public string AgreeId {
+            get {
+                return this.agreeIdField;
+            }
+            set {
+                this.agreeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("EmploymentStatusMonitoring")]
         public MessageLearnerLearnerEmploymentStatusEmploymentStatusMonitoring[] EmploymentStatusMonitoring {
             get {
@@ -1299,14 +1243,12 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerLearnerEmploymentStatusEmploymentStatusMonitoring {
         
         private string eSMTypeField;
         
-        private long eSMCodeField;
-        
-        private bool eSMCodeFieldSpecified;
+        private int eSMCodeField;
         
         /// <remarks/>
         public string ESMType {
@@ -1319,23 +1261,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long ESMCode {
+        public int ESMCode {
             get {
                 return this.eSMCodeField;
             }
             set {
                 this.eSMCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ESMCodeSpecified {
-            get {
-                return this.eSMCodeFieldSpecified;
-            }
-            set {
-                this.eSMCodeFieldSpecified = value;
             }
         }
     }
@@ -1345,12 +1276,12 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerLearnerHE {
         
         private string uCASPERIDField;
         
-        private long tTACCOMField;
+        private int tTACCOMField;
         
         private bool tTACCOMFieldSpecified;
         
@@ -1367,7 +1298,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long TTACCOM {
+        public int TTACCOM {
             get {
                 return this.tTACCOMField;
             }
@@ -1404,19 +1335,15 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerLearnerHELearnerHEFinancialSupport {
         
-        private long fINTYPEField;
+        private int fINTYPEField;
         
-        private bool fINTYPEFieldSpecified;
-        
-        private long fINAMOUNTField;
-        
-        private bool fINAMOUNTFieldSpecified;
+        private int fINAMOUNTField;
         
         /// <remarks/>
-        public long FINTYPE {
+        public int FINTYPE {
             get {
                 return this.fINTYPEField;
             }
@@ -1426,34 +1353,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool FINTYPESpecified {
-            get {
-                return this.fINTYPEFieldSpecified;
-            }
-            set {
-                this.fINTYPEFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long FINAMOUNT {
+        public int FINAMOUNT {
             get {
                 return this.fINAMOUNTField;
             }
             set {
                 this.fINAMOUNTField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool FINAMOUNTSpecified {
-            get {
-                return this.fINAMOUNTFieldSpecified;
-            }
-            set {
-                this.fINAMOUNTFieldSpecified = value;
             }
         }
     }
@@ -1463,22 +1368,16 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerLearningDelivery {
         
         private string learnAimRefField;
         
-        private long aimTypeField;
+        private int aimTypeField;
         
-        private bool aimTypeFieldSpecified;
-        
-        private long aimSeqNumberField;
-        
-        private bool aimSeqNumberFieldSpecified;
+        private int aimSeqNumberField;
         
         private System.DateTime learnStartDateField;
-        
-        private bool learnStartDateFieldSpecified;
         
         private System.DateTime origLearnStartDateField;
         
@@ -1486,43 +1385,39 @@ namespace ESFA.DC.ILR.Model {
         
         private System.DateTime learnPlanEndDateField;
         
-        private bool learnPlanEndDateFieldSpecified;
+        private int fundModelField;
         
-        private long fundModelField;
-        
-        private bool fundModelFieldSpecified;
-        
-        private long progTypeField;
+        private int progTypeField;
         
         private bool progTypeFieldSpecified;
         
-        private long fworkCodeField;
+        private int fworkCodeField;
         
         private bool fworkCodeFieldSpecified;
         
-        private long pwayCodeField;
+        private int pwayCodeField;
         
         private bool pwayCodeFieldSpecified;
         
-        private long stdCodeField;
+        private int stdCodeField;
         
         private bool stdCodeFieldSpecified;
         
-        private long partnerUKPRNField;
+        private int partnerUKPRNField;
         
         private bool partnerUKPRNFieldSpecified;
         
         private string delLocPostCodeField;
         
-        private long addHoursField;
+        private int addHoursField;
         
         private bool addHoursFieldSpecified;
         
-        private long priorLearnFundAdjField;
+        private int priorLearnFundAdjField;
         
         private bool priorLearnFundAdjFieldSpecified;
         
-        private long otherFundAdjField;
+        private int otherFundAdjField;
         
         private bool otherFundAdjFieldSpecified;
         
@@ -1530,23 +1425,21 @@ namespace ESFA.DC.ILR.Model {
         
         private string ePAOrgIDField;
         
-        private long empOutcomeField;
+        private int empOutcomeField;
         
         private bool empOutcomeFieldSpecified;
         
-        private long compStatusField;
-        
-        private bool compStatusFieldSpecified;
+        private int compStatusField;
         
         private System.DateTime learnActEndDateField;
         
         private bool learnActEndDateFieldSpecified;
         
-        private long withdrawReasonField;
+        private int withdrawReasonField;
         
         private bool withdrawReasonFieldSpecified;
         
-        private long outcomeField;
+        private int outcomeField;
         
         private bool outcomeFieldSpecified;
         
@@ -1566,7 +1459,7 @@ namespace ESFA.DC.ILR.Model {
         
         private MessageLearnerLearningDeliveryProviderSpecDeliveryMonitoring[] providerSpecDeliveryMonitoringField;
         
-        private MessageLearnerLearningDeliveryLearningDeliveryHE[] learningDeliveryHEField;
+        private MessageLearnerLearningDeliveryLearningDeliveryHE learningDeliveryHEField;
         
         /// <remarks/>
         public string LearnAimRef {
@@ -1579,7 +1472,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long AimType {
+        public int AimType {
             get {
                 return this.aimTypeField;
             }
@@ -1589,34 +1482,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool AimTypeSpecified {
-            get {
-                return this.aimTypeFieldSpecified;
-            }
-            set {
-                this.aimTypeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long AimSeqNumber {
+        public int AimSeqNumber {
             get {
                 return this.aimSeqNumberField;
             }
             set {
                 this.aimSeqNumberField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool AimSeqNumberSpecified {
-            get {
-                return this.aimSeqNumberFieldSpecified;
-            }
-            set {
-                this.aimSeqNumberFieldSpecified = value;
             }
         }
         
@@ -1628,17 +1499,6 @@ namespace ESFA.DC.ILR.Model {
             }
             set {
                 this.learnStartDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool LearnStartDateSpecified {
-            get {
-                return this.learnStartDateFieldSpecified;
-            }
-            set {
-                this.learnStartDateFieldSpecified = value;
             }
         }
         
@@ -1676,18 +1536,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool LearnPlanEndDateSpecified {
-            get {
-                return this.learnPlanEndDateFieldSpecified;
-            }
-            set {
-                this.learnPlanEndDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long FundModel {
+        public int FundModel {
             get {
                 return this.fundModelField;
             }
@@ -1697,18 +1546,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool FundModelSpecified {
-            get {
-                return this.fundModelFieldSpecified;
-            }
-            set {
-                this.fundModelFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long ProgType {
+        public int ProgType {
             get {
                 return this.progTypeField;
             }
@@ -1729,7 +1567,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long FworkCode {
+        public int FworkCode {
             get {
                 return this.fworkCodeField;
             }
@@ -1750,7 +1588,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long PwayCode {
+        public int PwayCode {
             get {
                 return this.pwayCodeField;
             }
@@ -1771,7 +1609,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long StdCode {
+        public int StdCode {
             get {
                 return this.stdCodeField;
             }
@@ -1792,7 +1630,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long PartnerUKPRN {
+        public int PartnerUKPRN {
             get {
                 return this.partnerUKPRNField;
             }
@@ -1823,7 +1661,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long AddHours {
+        public int AddHours {
             get {
                 return this.addHoursField;
             }
@@ -1844,7 +1682,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long PriorLearnFundAdj {
+        public int PriorLearnFundAdj {
             get {
                 return this.priorLearnFundAdjField;
             }
@@ -1865,7 +1703,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long OtherFundAdj {
+        public int OtherFundAdj {
             get {
                 return this.otherFundAdjField;
             }
@@ -1906,7 +1744,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long EmpOutcome {
+        public int EmpOutcome {
             get {
                 return this.empOutcomeField;
             }
@@ -1927,23 +1765,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long CompStatus {
+        public int CompStatus {
             get {
                 return this.compStatusField;
             }
             set {
                 this.compStatusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool CompStatusSpecified {
-            get {
-                return this.compStatusFieldSpecified;
-            }
-            set {
-                this.compStatusFieldSpecified = value;
             }
         }
         
@@ -1970,7 +1797,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long WithdrawReason {
+        public int WithdrawReason {
             get {
                 return this.withdrawReasonField;
             }
@@ -1991,7 +1818,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long Outcome {
+        public int Outcome {
             get {
                 return this.outcomeField;
             }
@@ -2098,8 +1925,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("LearningDeliveryHE")]
-        public MessageLearnerLearningDeliveryLearningDeliveryHE[] LearningDeliveryHE {
+        public MessageLearnerLearningDeliveryLearningDeliveryHE LearningDeliveryHE {
             get {
                 return this.learningDeliveryHEField;
             }
@@ -2114,7 +1940,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerLearningDeliveryLearningDeliveryFAM {
         
         private string learnDelFAMTypeField;
@@ -2199,26 +2025,20 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerLearningDeliveryLearningDeliveryWorkPlacement {
         
         private System.DateTime workPlaceStartDateField;
-        
-        private bool workPlaceStartDateFieldSpecified;
         
         private System.DateTime workPlaceEndDateField;
         
         private bool workPlaceEndDateFieldSpecified;
         
-        private long workPlaceHoursField;
+        private int workPlaceHoursField;
         
-        private bool workPlaceHoursFieldSpecified;
+        private int workPlaceModeField;
         
-        private long workPlaceModeField;
-        
-        private bool workPlaceModeFieldSpecified;
-        
-        private long workPlaceEmpIdField;
+        private int workPlaceEmpIdField;
         
         private bool workPlaceEmpIdFieldSpecified;
         
@@ -2230,17 +2050,6 @@ namespace ESFA.DC.ILR.Model {
             }
             set {
                 this.workPlaceStartDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool WorkPlaceStartDateSpecified {
-            get {
-                return this.workPlaceStartDateFieldSpecified;
-            }
-            set {
-                this.workPlaceStartDateFieldSpecified = value;
             }
         }
         
@@ -2267,7 +2076,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long WorkPlaceHours {
+        public int WorkPlaceHours {
             get {
                 return this.workPlaceHoursField;
             }
@@ -2277,18 +2086,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool WorkPlaceHoursSpecified {
-            get {
-                return this.workPlaceHoursFieldSpecified;
-            }
-            set {
-                this.workPlaceHoursFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long WorkPlaceMode {
+        public int WorkPlaceMode {
             get {
                 return this.workPlaceModeField;
             }
@@ -2298,18 +2096,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool WorkPlaceModeSpecified {
-            get {
-                return this.workPlaceModeFieldSpecified;
-            }
-            set {
-                this.workPlaceModeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long WorkPlaceEmpId {
+        public int WorkPlaceEmpId {
             get {
                 return this.workPlaceEmpIdField;
             }
@@ -2335,22 +2122,16 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerLearningDeliveryAppFinRecord {
         
         private string aFinTypeField;
         
-        private long aFinCodeField;
-        
-        private bool aFinCodeFieldSpecified;
+        private int aFinCodeField;
         
         private System.DateTime aFinDateField;
         
-        private bool aFinDateFieldSpecified;
-        
-        private long aFinAmountField;
-        
-        private bool aFinAmountFieldSpecified;
+        private int aFinAmountField;
         
         /// <remarks/>
         public string AFinType {
@@ -2363,23 +2144,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long AFinCode {
+        public int AFinCode {
             get {
                 return this.aFinCodeField;
             }
             set {
                 this.aFinCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool AFinCodeSpecified {
-            get {
-                return this.aFinCodeFieldSpecified;
-            }
-            set {
-                this.aFinCodeFieldSpecified = value;
             }
         }
         
@@ -2395,34 +2165,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool AFinDateSpecified {
-            get {
-                return this.aFinDateFieldSpecified;
-            }
-            set {
-                this.aFinDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long AFinAmount {
+        public int AFinAmount {
             get {
                 return this.aFinAmountField;
             }
             set {
                 this.aFinAmountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool AFinAmountSpecified {
-            get {
-                return this.aFinAmountFieldSpecified;
-            }
-            set {
-                this.aFinAmountFieldSpecified = value;
             }
         }
     }
@@ -2432,7 +2180,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerLearningDeliveryProviderSpecDeliveryMonitoring {
         
         private string provSpecDelMonOccurField;
@@ -2465,7 +2213,7 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerLearningDeliveryLearningDeliveryHE {
         
         private string nUMHUSField;
@@ -2474,43 +2222,31 @@ namespace ESFA.DC.ILR.Model {
         
         private string qUALENT3Field;
         
-        private long sOC2000Field;
+        private int sOC2000Field;
         
         private bool sOC2000FieldSpecified;
         
-        private long sECField;
+        private int sECField;
         
         private bool sECFieldSpecified;
         
         private string uCASAPPIDField;
         
-        private long tYPEYRField;
+        private int tYPEYRField;
         
-        private bool tYPEYRFieldSpecified;
+        private int mODESTUDField;
         
-        private long mODESTUDField;
+        private int fUNDLEVField;
         
-        private bool mODESTUDFieldSpecified;
-        
-        private long fUNDLEVField;
-        
-        private bool fUNDLEVFieldSpecified;
-        
-        private long fUNDCOMPField;
-        
-        private bool fUNDCOMPFieldSpecified;
+        private int fUNDCOMPField;
         
         private decimal sTULOADField;
         
         private bool sTULOADFieldSpecified;
         
-        private long yEARSTUField;
+        private int yEARSTUField;
         
-        private bool yEARSTUFieldSpecified;
-        
-        private long mSTUFEEField;
-        
-        private bool mSTUFEEFieldSpecified;
+        private int mSTUFEEField;
         
         private decimal pCOLABField;
         
@@ -2528,21 +2264,19 @@ namespace ESFA.DC.ILR.Model {
         
         private bool pCTLDCSFieldSpecified;
         
-        private long sPECFEEField;
+        private int sPECFEEField;
         
-        private bool sPECFEEFieldSpecified;
-        
-        private long nETFEEField;
+        private int nETFEEField;
         
         private bool nETFEEFieldSpecified;
         
-        private long gROSSFEEField;
+        private int gROSSFEEField;
         
         private bool gROSSFEEFieldSpecified;
         
         private string dOMICILEField;
         
-        private long eLQField;
+        private int eLQField;
         
         private bool eLQFieldSpecified;
         
@@ -2579,7 +2313,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long SOC2000 {
+        public int SOC2000 {
             get {
                 return this.sOC2000Field;
             }
@@ -2600,7 +2334,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long SEC {
+        public int SEC {
             get {
                 return this.sECField;
             }
@@ -2631,7 +2365,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long TYPEYR {
+        public int TYPEYR {
             get {
                 return this.tYPEYRField;
             }
@@ -2641,18 +2375,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TYPEYRSpecified {
-            get {
-                return this.tYPEYRFieldSpecified;
-            }
-            set {
-                this.tYPEYRFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long MODESTUD {
+        public int MODESTUD {
             get {
                 return this.mODESTUDField;
             }
@@ -2662,18 +2385,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool MODESTUDSpecified {
-            get {
-                return this.mODESTUDFieldSpecified;
-            }
-            set {
-                this.mODESTUDFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long FUNDLEV {
+        public int FUNDLEV {
             get {
                 return this.fUNDLEVField;
             }
@@ -2683,34 +2395,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool FUNDLEVSpecified {
-            get {
-                return this.fUNDLEVFieldSpecified;
-            }
-            set {
-                this.fUNDLEVFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long FUNDCOMP {
+        public int FUNDCOMP {
             get {
                 return this.fUNDCOMPField;
             }
             set {
                 this.fUNDCOMPField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool FUNDCOMPSpecified {
-            get {
-                return this.fUNDCOMPFieldSpecified;
-            }
-            set {
-                this.fUNDCOMPFieldSpecified = value;
             }
         }
         
@@ -2736,7 +2426,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long YEARSTU {
+        public int YEARSTU {
             get {
                 return this.yEARSTUField;
             }
@@ -2746,34 +2436,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool YEARSTUSpecified {
-            get {
-                return this.yEARSTUFieldSpecified;
-            }
-            set {
-                this.yEARSTUFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long MSTUFEE {
+        public int MSTUFEE {
             get {
                 return this.mSTUFEEField;
             }
             set {
                 this.mSTUFEEField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool MSTUFEESpecified {
-            get {
-                return this.mSTUFEEFieldSpecified;
-            }
-            set {
-                this.mSTUFEEFieldSpecified = value;
             }
         }
         
@@ -2862,7 +2530,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long SPECFEE {
+        public int SPECFEE {
             get {
                 return this.sPECFEEField;
             }
@@ -2872,18 +2540,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool SPECFEESpecified {
-            get {
-                return this.sPECFEEFieldSpecified;
-            }
-            set {
-                this.sPECFEEFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long NETFEE {
+        public int NETFEE {
             get {
                 return this.nETFEEField;
             }
@@ -2904,7 +2561,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long GROSSFEE {
+        public int GROSSFEE {
             get {
                 return this.gROSSFEEField;
             }
@@ -2935,7 +2592,7 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long ELQ {
+        public int ELQ {
             get {
                 return this.eLQField;
             }
@@ -2971,14 +2628,12 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerDestinationandProgression {
         
         private string learnRefNumberField;
         
         private long uLNField;
-        
-        private bool uLNFieldSpecified;
         
         private MessageLearnerDestinationandProgressionDPOutcome[] dPOutcomeField;
         
@@ -3003,17 +2658,6 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ULNSpecified {
-            get {
-                return this.uLNFieldSpecified;
-            }
-            set {
-                this.uLNFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("DPOutcome")]
         public MessageLearnerDestinationandProgressionDPOutcome[] DPOutcome {
             get {
@@ -3030,26 +2674,20 @@ namespace ESFA.DC.ILR.Model {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="SFA/ILR/2017-18")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="ESFA/ILR/2018-19")]
     public partial class MessageLearnerDestinationandProgressionDPOutcome {
         
         private string outTypeField;
         
-        private long outCodeField;
-        
-        private bool outCodeFieldSpecified;
+        private int outCodeField;
         
         private System.DateTime outStartDateField;
-        
-        private bool outStartDateFieldSpecified;
         
         private System.DateTime outEndDateField;
         
         private bool outEndDateFieldSpecified;
         
         private System.DateTime outCollDateField;
-        
-        private bool outCollDateFieldSpecified;
         
         /// <remarks/>
         public string OutType {
@@ -3062,23 +2700,12 @@ namespace ESFA.DC.ILR.Model {
         }
         
         /// <remarks/>
-        public long OutCode {
+        public int OutCode {
             get {
                 return this.outCodeField;
             }
             set {
                 this.outCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool OutCodeSpecified {
-            get {
-                return this.outCodeFieldSpecified;
-            }
-            set {
-                this.outCodeFieldSpecified = value;
             }
         }
         
@@ -3090,17 +2717,6 @@ namespace ESFA.DC.ILR.Model {
             }
             set {
                 this.outStartDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool OutStartDateSpecified {
-            get {
-                return this.outStartDateFieldSpecified;
-            }
-            set {
-                this.outStartDateFieldSpecified = value;
             }
         }
         
@@ -3134,17 +2750,6 @@ namespace ESFA.DC.ILR.Model {
             }
             set {
                 this.outCollDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool OutCollDateSpecified {
-            get {
-                return this.outCollDateFieldSpecified;
-            }
-            set {
-                this.outCollDateFieldSpecified = value;
             }
         }
     }

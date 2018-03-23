@@ -13,42 +13,12 @@ namespace ESFA.DC.ILR.Model
         {
             get { return sECFieldSpecified ? (long?)sECField : null; }
         }
-
-        public long? TYPEYRNullable
-        {
-            get { return tYPEYRFieldSpecified ? (long?)tYPEYRField : null; }
-        }
-
-        public long? MODESTUDNullable
-        {
-            get { return mODESTUDFieldSpecified ? (long?)mODESTUDField : null; }
-        }
-
-        public long? FUNDLEVNullable
-        {
-            get { return fUNDLEVFieldSpecified ? (long?)fUNDLEVField : null; }
-        }
-
-        public long? FUNDCOMPNullable
-        {
-            get { return fUNDCOMPFieldSpecified ? (long?)fUNDCOMPField : null; }
-        }
-
+        
         public decimal? STULOADNullable
         { 
             get { return sTULOADFieldSpecified? (long?) sTULOADField : null; }
         }
-
-        public long? YEARSTUNullable
-        {
-            get { return yEARSTUFieldSpecified ? (long?)yEARSTUField : null; }
-        }
-
-        public long? MSTUFEENullable
-        {
-            get { return mSTUFEEFieldSpecified ? (long?)mSTUFEEField : null; }
-        }
-
+        
         public decimal? PCOLABNullable
         {
             get { return pCOLABFieldSpecified ? (decimal?)pCOLABField : null; }
@@ -68,12 +38,7 @@ namespace ESFA.DC.ILR.Model
         {
             get { return pCTLDCSFieldSpecified ? (decimal?)pCTLDCSField : null; }
         }
-
-        public long? SPECFEENullable
-        {
-            get { return sPECFEEFieldSpecified ? (long?)sPECFEEField : null; }
-        }
-
+        
         public long? NETFEENullable
         {
             get { return nETFEEFieldSpecified ? (long?)nETFEEField : null; }

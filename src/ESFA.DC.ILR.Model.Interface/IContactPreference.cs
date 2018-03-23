@@ -3,6 +3,6 @@
     public interface IContactPreference
     {
         string ContPrefType { get; }
-        long? ContPrefCodeNullable { get; }
+        int ContPrefCode { get; }
     }
 }
