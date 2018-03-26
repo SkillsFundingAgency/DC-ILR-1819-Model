@@ -29,7 +29,7 @@ namespace ESFA.DC.ILR.Model.Tests
         {
             TestNullableSpecifiedTrue(ld => ld.AddHours, Int(), ld => ld.AddHoursSpecified, ld => ld.AddHoursNullable);
         }
-        
+
         [Fact]
         public void EmpOutcomeNullable_Specified_False()
         {
@@ -41,11 +41,11 @@ namespace ESFA.DC.ILR.Model.Tests
         {
             TestNullableSpecifiedTrue(ld => ld.EmpOutcome, Int(), ld => ld.EmpOutcomeSpecified, ld => ld.EmpOutcomeNullable);
         }
-        
+
         [Fact]
         public void FworkCodeNullable_Specified_False()
         {
-            TestNullableSpecifiedFalse(ld => ld.FworkCode, Int(), ld => ld.FworkCodeSpecified, ld => ld.FworkCodeNullable);            
+            TestNullableSpecifiedFalse(ld => ld.FworkCode, Int(), ld => ld.FworkCodeSpecified, ld => ld.FworkCodeNullable);
         }
 
         [Fact]
@@ -125,7 +125,7 @@ namespace ESFA.DC.ILR.Model.Tests
         {
             TestNullableSpecifiedTrue(ld => ld.PriorLearnFundAdj, Int(), ld => ld.PriorLearnFundAdjSpecified, ld => ld.PriorLearnFundAdjNullable);
         }
-        
+
         [Fact]
         public void ProgTypeNullable_Specified_False()
         {
@@ -137,7 +137,7 @@ namespace ESFA.DC.ILR.Model.Tests
         {
             TestNullableSpecifiedTrue(ld => ld.ProgType, Int(), ld => ld.ProgTypeSpecified, ld => ld.ProgTypeNullable);
         }
-        
+
         [Fact]
         public void PwayCodeNullable_Specified_False()
         {
@@ -203,7 +203,7 @@ namespace ESFA.DC.ILR.Model.Tests
             learningDelivery.LearningDeliveryFAMs.Should().BeSameAs(learningDelivery.LearningDeliveryFAM);
             learningDelivery.LearningDeliveryFAMs.Should().HaveCount(1);
         }
-        
+
         [Fact]
         public void LearningDeliveryHEEntity()
         {
@@ -214,7 +214,7 @@ namespace ESFA.DC.ILR.Model.Tests
 
             learningDelivery.LearningDeliveryHEEntity.Should().BeSameAs(learningDelivery.LearningDeliveryHE);
         }
-        
+
         [Fact]
         public void LearningDeliveryWorkPlacements()
         {
@@ -229,7 +229,7 @@ namespace ESFA.DC.ILR.Model.Tests
             learningDelivery.LearningDeliveryWorkPlacements.Should().BeSameAs(learningDelivery.LearningDeliveryWorkPlacement);
             learningDelivery.LearningDeliveryWorkPlacements.Should().HaveCount(1);
         }
-        
+
         [Fact]
         public void ProviderSpecDeliveryMonitorings()
         {
@@ -243,6 +243,6 @@ namespace ESFA.DC.ILR.Model.Tests
 
             learningDelivery.ProviderSpecDeliveryMonitorings.Should().BeSameAs(learningDelivery.ProviderSpecDeliveryMonitoring);
             learningDelivery.ProviderSpecDeliveryMonitorings.Should().HaveCount(1);
-        }        
+        }
     }
 }

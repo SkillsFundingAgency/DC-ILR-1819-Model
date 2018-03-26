@@ -1,11 +1,12 @@
-﻿using FluentAssertions;
-using System;
+﻿using System;
 using System.Linq.Expressions;
 using System.Reflection;
+using FluentAssertions;
 
 namespace ESFA.DC.ILR.Model.Tests.Abstract
 {
-    public class AbstractModelTests<T> where T : new()
+    public class AbstractModelTests<T>
+        where T : new()
     {
         protected DateTime DateTime()
         {
@@ -37,7 +38,7 @@ namespace ESFA.DC.ILR.Model.Tests.Abstract
             var nullable = Get(modelObject, nullablePropertyExpression);
 
             nullable.Should().Be(value);
-            nullable.Should().NotBeNull();     
+            nullable.Should().NotBeNull();
 
             return modelObject;
         }

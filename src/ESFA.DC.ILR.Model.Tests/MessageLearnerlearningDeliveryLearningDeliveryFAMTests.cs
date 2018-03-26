@@ -16,7 +16,7 @@ namespace ESFA.DC.ILR.Model.Tests
         {
             TestNullableSpecifiedFalse(l => l.LearnDelFAMDateFrom, DateTime(), l => l.LearnDelFAMDateFromSpecified, l => l.LearnDelFAMDateFromNullable);
         }
-        
+
         [Fact]
         public void LearnDelFAMDateToNullable_Specified_True()
         {
@@ -27,6 +27,6 @@ namespace ESFA.DC.ILR.Model.Tests
         public void LearnDelFAMDateToNullable_Specified_False()
         {
             TestNullableSpecifiedFalse(l => l.LearnDelFAMDateTo, DateTime(), l => l.LearnDelFAMDateToSpecified, l => l.LearnDelFAMDateToNullable);
-        }        
+        }
     }
 }

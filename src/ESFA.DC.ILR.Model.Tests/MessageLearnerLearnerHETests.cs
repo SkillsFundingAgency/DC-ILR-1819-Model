@@ -17,7 +17,7 @@ namespace ESFA.DC.ILR.Model.Tests
         {
             TestNullableSpecifiedFalse(l => l.TTACCOM, Int(), l => l.TTACCOMSpecified, l => l.TTACCOMNullable);
         }
-        
+
         [Fact]
         public void LearnerHEFinancialSupports()
         {
@@ -31,6 +31,6 @@ namespace ESFA.DC.ILR.Model.Tests
 
             learnerHE.LearnerHEFinancialSupports.Should().BeSameAs(learnerHE.LearnerHEFinancialSupport);
             learnerHE.LearnerHEFinancialSupports.Should().HaveCount(1);
-        }        
+        }
     }
 }

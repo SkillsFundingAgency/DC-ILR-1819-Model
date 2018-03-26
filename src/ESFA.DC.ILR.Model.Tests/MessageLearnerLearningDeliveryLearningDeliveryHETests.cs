@@ -4,7 +4,7 @@ using Xunit;
 namespace ESFA.DC.ILR.Model.Tests
 {
     public class MessageLearnerLearningDeliveryLearningDeliveryHETests : AbstractModelTests<MessageLearnerLearningDeliveryLearningDeliveryHE>
-    {        
+    {
         [Fact]
         public void SOC2000Nullable_Specified_True()
         {
@@ -123,6 +123,6 @@ namespace ESFA.DC.ILR.Model.Tests
         public void GROSSFEENullable_Specified_False()
         {
             TestNullableSpecifiedFalse(l => l.GROSSFEE, Int(), l => l.GROSSFEESpecified, l => l.GROSSFEENullable);
-        }        
+        }
     }
 }

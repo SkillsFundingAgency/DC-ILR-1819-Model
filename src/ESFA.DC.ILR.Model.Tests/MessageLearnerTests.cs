@@ -1,6 +1,5 @@
 ﻿using ESFA.DC.ILR.Model.Tests.Abstract;
 using FluentAssertions;
-using System;
 using Xunit;
 
 namespace ESFA.DC.ILR.Model.Tests
@@ -30,19 +29,19 @@ namespace ESFA.DC.ILR.Model.Tests
         {
             TestNullableSpecifiedFalse(l => l.ALSCost, Int(), l => l.ALSCostSpecified, l => l.ALSCostNullable);
         }
-        
+
         [Fact]
         public void DateOfBirthNullable_Specified_True()
         {
             TestNullableSpecifiedTrue(l => l.DateOfBirth, DateTime(), l => l.DateOfBirthSpecified, l => l.DateOfBirthNullable);
         }
-            
+
         [Fact]
         public void DateOfBirthNullable_Specified_False()
         {
             TestNullableSpecifiedFalse(l => l.DateOfBirth, DateTime(), l => l.DateOfBirthSpecified, l => l.DateOfBirthNullable);
         }
-        
+
         [Fact]
         public void PMUKPRNNullable_Specified_True()
         {
@@ -58,15 +57,15 @@ namespace ESFA.DC.ILR.Model.Tests
         [Fact]
         public void PrevUKPRNNullable_Specified_True()
         {
-            TestNullableSpecifiedTrue(l => l.PrevUKPRN, Int(), l => l.PrevUKPRNSpecified, l => l.PrevUKPRNNullable);            
-        }  
+            TestNullableSpecifiedTrue(l => l.PrevUKPRN, Int(), l => l.PrevUKPRNSpecified, l => l.PrevUKPRNNullable);
+        }
 
         [Fact]
         public void PrevUKPRNNullable_Specified_False()
         {
             TestNullableSpecifiedFalse(l => l.PrevUKPRN, Int(), l => l.PrevUKPRNSpecified, l => l.PrevUKPRNNullable);
         }
-        
+
         [Fact]
         public void PlanEEPHoursNullable_Specified_True()
         {
@@ -101,8 +100,8 @@ namespace ESFA.DC.ILR.Model.Tests
         public void PriorAttainNullable_Specified_False()
         {
             TestNullableSpecifiedFalse(l => l.PriorAttain, Int(), l => l.PriorAttainSpecified, l => l.PriorAttainNullable);
-        }        
-        
+        }
+
         [Fact]
         public void ContactPreferences()
         {
@@ -147,7 +146,7 @@ namespace ESFA.DC.ILR.Model.Tests
             learner.LearnerFAMs.Should().BeSameAs(learner.LearnerFAM);
             learner.LearnerFAMs.Should().HaveCount(1);
         }
-        
+
         [Fact]
         public void LearnerHEEntity()
         {
@@ -172,7 +171,7 @@ namespace ESFA.DC.ILR.Model.Tests
 
             learner.LearningDeliveries.Should().BeSameAs(learner.LearningDelivery);
             learner.LearningDeliveries.Should().HaveCount(1);
-        }    
+        }
 
         [Fact]
         public void LLDDAndHealthProblems()
@@ -188,7 +187,7 @@ namespace ESFA.DC.ILR.Model.Tests
             learner.LLDDAndHealthProblems.Should().BeSameAs(learner.LLDDandHealthProblem);
             learner.LLDDAndHealthProblems.Should().HaveCount(1);
         }
-        
+
         [Fact]
         public void ProviderSpecLearnerMonitorings()
         {
@@ -202,6 +201,6 @@ namespace ESFA.DC.ILR.Model.Tests
 
             learner.ProviderSpecLearnerMonitorings.Should().BeSameAs(learner.ProviderSpecLearnerMonitoring);
             learner.ProviderSpecLearnerMonitorings.Should().HaveCount(1);
-        }        
+        }
     }
 }

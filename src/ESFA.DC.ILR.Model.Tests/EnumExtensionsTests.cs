@@ -1,6 +1,6 @@
-﻿using ESFA.DC.ILR.Model.Extension;
+﻿using System.Xml.Serialization;
+using ESFA.DC.ILR.Model.Extension;
 using FluentAssertions;
-using System.Xml.Serialization;
 using Xunit;
 
 namespace ESFA.DC.ILR.Model.Tests
@@ -8,13 +8,13 @@ namespace ESFA.DC.ILR.Model.Tests
     public class EnumExtensionsTests
     {
         public enum TestData
-        {            
+        {
             [XmlEnum("NoSpace")]
             NoSpace,
-                     
+
             [XmlEnum("Space Bar")]
             Space,
-                        
+
             NoAttribute,
         }
 
@@ -22,7 +22,7 @@ namespace ESFA.DC.ILR.Model.Tests
         public void NoSpace()
         {
             TestData.NoSpace.XmlEnumToString().Should().Be("NoSpace");
-        }       
+        }
 
         [Fact]
         public void Space()

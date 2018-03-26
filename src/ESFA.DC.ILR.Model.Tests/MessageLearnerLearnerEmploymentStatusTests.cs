@@ -17,7 +17,7 @@ namespace ESFA.DC.ILR.Model.Tests
         {
             TestNullableSpecifiedFalse(l => l.EmpId, Int(), l => l.EmpIdSpecified, l => l.EmpIdNullable);
         }
-        
+
         [Fact]
         public void EmploymentStatusMonitorings()
         {
