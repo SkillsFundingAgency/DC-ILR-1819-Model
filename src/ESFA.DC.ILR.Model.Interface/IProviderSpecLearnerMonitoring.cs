@@ -3,6 +3,7 @@
     public interface IProviderSpecLearnerMonitoring
     {
         string ProvSpecLearnMonOccur { get; }
+
         string ProvSpecLearnMon { get; }
     }
 }

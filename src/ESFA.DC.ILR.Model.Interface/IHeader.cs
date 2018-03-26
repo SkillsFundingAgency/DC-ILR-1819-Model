@@ -3,6 +3,7 @@
     public interface IHeader
     {
         ICollectionDetails CollectionDetailsEntity { get; }
+
         ISource SourceEntity { get; }
     }
 }

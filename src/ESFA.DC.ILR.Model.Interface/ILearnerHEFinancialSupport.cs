@@ -3,6 +3,7 @@
     public interface ILearnerHEFinancialSupport
     {
         int FINTYPE { get; }
+
         int FINAMOUNT { get; }
     }
 }

@@ -3,6 +3,7 @@
     public interface IContactPreference
     {
         string ContPrefType { get; }
+
         int ContPrefCode { get; }
     }
 }

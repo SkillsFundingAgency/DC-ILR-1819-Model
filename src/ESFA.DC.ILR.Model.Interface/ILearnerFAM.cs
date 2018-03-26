@@ -3,6 +3,7 @@
     public interface ILearnerFAM
     {
         string LearnFAMType { get; }
+
         int LearnFAMCode { get; }
     }
 }
