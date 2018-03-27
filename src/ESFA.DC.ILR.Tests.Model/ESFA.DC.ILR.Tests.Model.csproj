@@ -24,11 +24,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ESFA.DC.ILR.1819.Model.Interface" Version="0.1.0-beta0001" />
     <PackageReference Include="stylecop.analyzers" Version="1.0.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\ESFA.DC.ILR.Model.Interface\ESFA.DC.ILR.Model.Interface.csproj" />
   </ItemGroup>
 
 </Project>
