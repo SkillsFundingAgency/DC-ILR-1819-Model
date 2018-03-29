@@ -5,7 +5,7 @@ namespace ESFA.DC.ILR.Model.Interface
 {
     public interface ILearner
     {
-        long? AccomNullable { get; }
+        int? AccomNullable { get; }
 
         string AddLine1 { get; }
 
@@ -15,7 +15,7 @@ namespace ESFA.DC.ILR.Model.Interface
 
         string AddLine4 { get; }
 
-        long? ALSCostNullable { get; }
+        int? ALSCostNullable { get; }
 
         DateTime? DateOfBirthNullable { get; }
 
@@ -37,11 +37,11 @@ namespace ESFA.DC.ILR.Model.Interface
 
         string NINumber { get; }
 
-        long? PlanEEPHoursNullable { get; }
+        int? PlanEEPHoursNullable { get; }
 
-        long? PlanLearnHoursNullable { get; }
+        int? PlanLearnHoursNullable { get; }
 
-        long? PMUKPRNNullable { get; }
+        int? PMUKPRNNullable { get; }
 
         string Postcode { get; }
 
@@ -49,9 +49,9 @@ namespace ESFA.DC.ILR.Model.Interface
 
         string PrevLearnRefNumber { get; }
 
-        long? PrevUKPRNNullable { get; }
+        int? PrevUKPRNNullable { get; }
 
-        long? PriorAttainNullable { get; }
+        int? PriorAttainNullable { get; }
 
         long ULN { get; }
 

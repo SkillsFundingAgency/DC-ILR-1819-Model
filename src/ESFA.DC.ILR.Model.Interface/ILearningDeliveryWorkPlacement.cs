@@ -12,6 +12,6 @@ namespace ESFA.DC.ILR.Model.Interface
 
         int WorkPlaceMode { get; }
 
-        long? WorkPlaceEmpIdNullable { get; }
+        int? WorkPlaceEmpIdNullable { get; }
     }
 }

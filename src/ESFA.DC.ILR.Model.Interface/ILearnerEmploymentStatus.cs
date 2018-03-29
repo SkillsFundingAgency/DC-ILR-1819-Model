@@ -9,7 +9,7 @@ namespace ESFA.DC.ILR.Model.Interface
 
         DateTime DateEmpStatApp { get; }
 
-        long? EmpIdNullable { get; }
+        int? EmpIdNullable { get; }
 
         IReadOnlyCollection<IEmploymentStatusMonitoring> EmploymentStatusMonitorings { get; }
     }

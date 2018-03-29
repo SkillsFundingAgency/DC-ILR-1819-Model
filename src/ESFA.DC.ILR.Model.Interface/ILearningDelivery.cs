@@ -7,7 +7,7 @@ namespace ESFA.DC.ILR.Model.Interface
     {
         DateTime? AchDateNullable { get; }
 
-        long? AddHoursNullable { get; }
+        int? AddHoursNullable { get; }
 
         int AimSeqNumber { get; }
 
@@ -19,13 +19,13 @@ namespace ESFA.DC.ILR.Model.Interface
 
         string DelLocPostCode { get; }
 
-        long? EmpOutcomeNullable { get; }
+        int? EmpOutcomeNullable { get; }
 
         string EPAOrgID { get; }
 
         int FundModel { get; }
 
-        long? FworkCodeNullable { get; }
+        int? FworkCodeNullable { get; }
 
         string LearnAimRef { get; }
 
@@ -37,25 +37,25 @@ namespace ESFA.DC.ILR.Model.Interface
 
         DateTime? OrigLearnStartDateNullable { get; }
 
-        long? OtherFundAdjNullable { get; }
+        int? OtherFundAdjNullable { get; }
 
-        long? OutcomeNullable { get; }
+        int? OutcomeNullable { get; }
 
         string OutGrade { get; }
 
-        long? PartnerUKPRNNullable { get; }
+        int? PartnerUKPRNNullable { get; }
 
-        long? PriorLearnFundAdjNullable { get; }
+        int? PriorLearnFundAdjNullable { get; }
 
-        long? ProgTypeNullable { get; }
+        int? ProgTypeNullable { get; }
 
-        long? PwayCodeNullable { get; }
+        int? PwayCodeNullable { get; }
 
-        long? StdCodeNullable { get; }
+        int? StdCodeNullable { get; }
 
         string SWSupAimId { get; }
 
-        long? WithdrawReasonNullable { get; }
+        int? WithdrawReasonNullable { get; }
 
         ILearningDeliveryHE LearningDeliveryHEEntity { get; }
 

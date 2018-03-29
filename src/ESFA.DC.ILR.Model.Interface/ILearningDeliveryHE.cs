@@ -8,9 +8,9 @@
 
         string QUALENT3 { get; }
 
-        long? SOC2000Nullable { get; }
+        int? SOC2000Nullable { get; }
 
-        long? SECNullable { get; }
+        int? SECNullable { get; }
 
         string UCASAPPID { get; }
 
@@ -38,13 +38,13 @@
 
         int SPECFEE { get; }
 
-        long? NETFEENullable { get; }
+        int? NETFEENullable { get; }
 
-        long? GROSSFEENullable { get; }
+        int? GROSSFEENullable { get; }
 
         string DOMICILE { get; }
 
-        long? ELQNullable { get; }
+        int? ELQNullable { get; }
 
         string HEPostCode { get; }
     }

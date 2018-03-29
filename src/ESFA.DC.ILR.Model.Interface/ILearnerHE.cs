@@ -6,7 +6,7 @@ namespace ESFA.DC.ILR.Model.Interface
     {
         string UCASPERID { get; }
 
-        long? TTACCOMNullable { get; }
+        int? TTACCOMNullable { get; }
 
         IReadOnlyCollection<ILearnerHEFinancialSupport> LearnerHEFinancialSupports { get; }
     }

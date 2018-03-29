@@ -4,6 +4,6 @@
     {
         int LLDDCat { get; }
 
-        long? PrimaryLLDDNullable { get; }
+        int? PrimaryLLDDNullable { get; }
     }
 }
