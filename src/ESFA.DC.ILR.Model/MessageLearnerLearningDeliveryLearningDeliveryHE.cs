@@ -4,19 +4,19 @@ namespace ESFA.DC.ILR.Model
 {
     public partial class MessageLearnerLearningDeliveryLearningDeliveryHE : ILearningDeliveryHE
     {
-        public long? SOC2000Nullable
+        public int? SOC2000Nullable
         {
-            get { return sOC2000FieldSpecified ? (long?)sOC2000Field : null; }
+            get { return sOC2000FieldSpecified ? (int?)sOC2000Field : null; }
         }
 
-        public long? SECNullable
+        public int? SECNullable
         {
-            get { return sECFieldSpecified ? (long?)sECField : null; }
+            get { return sECFieldSpecified ? (int?)sECField : null; }
         }
         
         public decimal? STULOADNullable
         { 
-            get { return sTULOADFieldSpecified? (long?) sTULOADField : null; }
+            get { return sTULOADFieldSpecified? (decimal?) sTULOADField : null; }
         }
         
         public decimal? PCOLABNullable
@@ -39,21 +39,21 @@ namespace ESFA.DC.ILR.Model
             get { return pCTLDCSFieldSpecified ? (decimal?)pCTLDCSField : null; }
         }
         
-        public long? NETFEENullable
+        public int? NETFEENullable
         {
-            get { return nETFEEFieldSpecified ? (long?)nETFEEField : null; }
+            get { return nETFEEFieldSpecified ? (int?)nETFEEField : null; }
         }
 
-        public long? ELQNullable
+        public int? ELQNullable
         {
-            get { return eLQFieldSpecified ? (long?)eLQField : null; }
+            get { return eLQFieldSpecified ? (int?)eLQField : null; }
         }
 
-        public long? GROSSFEENullable
+        public int? GROSSFEENullable
         {
             get
             {
-                return gROSSFEEFieldSpecified ? (long?)gROSSFEEField : null;
+                return gROSSFEEFieldSpecified ? (int?)gROSSFEEField : null;
             }
         }
     }

@@ -4,9 +4,9 @@ namespace ESFA.DC.ILR.Model
 {
     public partial class MessageLearnerLLDDandHealthProblem : ILLDDAndHealthProblem
     {
-        public long? PrimaryLLDDNullable
+        public int? PrimaryLLDDNullable
         {
-            get { return primaryLLDDFieldSpecified ? (long?)primaryLLDDField : null; }
+            get { return primaryLLDDFieldSpecified ? (int?)primaryLLDDField : null; }
         }
     }
 }

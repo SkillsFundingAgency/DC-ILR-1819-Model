@@ -8,7 +8,7 @@ namespace ESFA.DC.ILR.Tests.Model
     {
         public DateTime? AchDateNullable { get; set; }
 
-        public long? AddHoursNullable { get; set; }
+        public int? AddHoursNullable { get; set; }
 
         public int AimSeqNumber { get; set; }
 
@@ -20,13 +20,13 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public string DelLocPostCode { get; set; }
 
-        public long? EmpOutcomeNullable { get; set; }
+        public int? EmpOutcomeNullable { get; set; }
 
         public string EPAOrgID { get; set; }
 
         public int FundModel { get; set; }
 
-        public long? FworkCodeNullable { get; set; }
+        public int? FworkCodeNullable { get; set; }
 
         public string LearnAimRef { get; set; }
 
@@ -38,25 +38,25 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public DateTime? OrigLearnStartDateNullable { get; set; }
 
-        public long? OtherFundAdjNullable { get; set; }
+        public int? OtherFundAdjNullable { get; set; }
 
-        public long? OutcomeNullable { get; set; }
+        public int? OutcomeNullable { get; set; }
 
         public string OutGrade { get; set; }
 
-        public long? PartnerUKPRNNullable { get; set; }
+        public int? PartnerUKPRNNullable { get; set; }
 
-        public long? PriorLearnFundAdjNullable { get; set; }
+        public int? PriorLearnFundAdjNullable { get; set; }
 
-        public long? ProgTypeNullable { get; set; }
+        public int? ProgTypeNullable { get; set; }
 
-        public long? PwayCodeNullable { get; set; }
+        public int? PwayCodeNullable { get; set; }
 
-        public long? StdCodeNullable { get; set; }
+        public int? StdCodeNullable { get; set; }
 
         public string SWSupAimId { get; set; }
 
-        public long? WithdrawReasonNullable { get; set; }
+        public int? WithdrawReasonNullable { get; set; }
 
         public ILearningDeliveryHE LearningDeliveryHEEntity { get; set; }
 

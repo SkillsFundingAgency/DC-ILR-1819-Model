@@ -6,9 +6,9 @@ namespace ESFA.DC.ILR.Model
 {
     public partial class MessageLearnerLearnerEmploymentStatus : ILearnerEmploymentStatus
     {
-        public long? EmpIdNullable
+        public int? EmpIdNullable
         {
-            get { return empIdFieldSpecified ? (long?)empIdField : null; }
+            get { return empIdFieldSpecified ? (int?)empIdField : null; }
         }
         
         public IReadOnlyCollection<IEmploymentStatusMonitoring> EmploymentStatusMonitorings

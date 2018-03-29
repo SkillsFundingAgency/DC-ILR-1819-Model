@@ -7,7 +7,7 @@ namespace ESFA.DC.ILR.Tests.Model
     {
         public string UCASPERID { get; set; }
 
-        public long? TTACCOMNullable { get; set; }
+        public int? TTACCOMNullable { get; set; }
 
         public IReadOnlyCollection<ILearnerHEFinancialSupport> LearnerHEFinancialSupports { get; set; }
     }

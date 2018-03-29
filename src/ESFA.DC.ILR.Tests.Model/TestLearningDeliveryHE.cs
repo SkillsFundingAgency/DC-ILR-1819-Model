@@ -10,9 +10,9 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public string QUALENT3 { get; set; }
 
-        public long? SOC2000Nullable { get; set; }
+        public int? SOC2000Nullable { get; set; }
 
-        public long? SECNullable { get; set; }
+        public int? SECNullable { get; set; }
 
         public string UCASAPPID { get; set; }
 
@@ -40,13 +40,13 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public int SPECFEE { get; set; }
 
-        public long? NETFEENullable { get; set; }
+        public int? NETFEENullable { get; set; }
 
-        public long? GROSSFEENullable { get; set; }
+        public int? GROSSFEENullable { get; set; }
 
         public string DOMICILE { get; set; }
 
-        public long? ELQNullable { get; set; }
+        public int? ELQNullable { get; set; }
 
         public string HEPostCode { get; set; }
     }

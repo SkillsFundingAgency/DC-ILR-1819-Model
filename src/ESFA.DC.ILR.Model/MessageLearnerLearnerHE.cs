@@ -5,9 +5,9 @@ namespace ESFA.DC.ILR.Model
 {
     public partial class MessageLearnerLearnerHE : ILearnerHE
     {
-        public long? TTACCOMNullable
+        public int? TTACCOMNullable
         {
-            get { return tTACCOMFieldSpecified ? (long?)tTACCOMField : null; }
+            get { return tTACCOMFieldSpecified ? (int?)tTACCOMField : null; }
         }
 
         public IReadOnlyCollection<ILearnerHEFinancialSupport> LearnerHEFinancialSupports

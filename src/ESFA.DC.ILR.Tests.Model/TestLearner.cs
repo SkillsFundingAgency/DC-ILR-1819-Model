@@ -6,7 +6,7 @@ namespace ESFA.DC.ILR.Tests.Model
 {
     public class TestLearner : ILearner
     {
-        public long? AccomNullable { get; set; }
+        public int? AccomNullable { get; set; }
 
         public string AddLine1 { get; set; }
 
@@ -16,7 +16,7 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public string AddLine4 { get; set; }
 
-        public long? ALSCostNullable { get; set; }
+        public int? ALSCostNullable { get; set; }
 
         public DateTime? DateOfBirthNullable { get; set; }
 
@@ -38,11 +38,11 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public string NINumber { get; set; }
 
-        public long? PlanEEPHoursNullable { get; set; }
+        public int? PlanEEPHoursNullable { get; set; }
 
-        public long? PlanLearnHoursNullable { get; set; }
+        public int? PlanLearnHoursNullable { get; set; }
 
-        public long? PMUKPRNNullable { get; set; }
+        public int? PMUKPRNNullable { get; set; }
 
         public string Postcode { get; set; }
 
@@ -50,9 +50,9 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public string PrevLearnRefNumber { get; set; }
 
-        public long? PrevUKPRNNullable { get; set; }
+        public int? PrevUKPRNNullable { get; set; }
 
-        public long? PriorAttainNullable { get; set; }
+        public int? PriorAttainNullable { get; set; }
 
         public long ULN { get; set; }
 

@@ -10,9 +10,9 @@ namespace ESFA.DC.ILR.Model
             get { return workPlaceEndDateFieldSpecified ? (DateTime?)workPlaceEndDateField : null;  }
         }
         
-        public long? WorkPlaceEmpIdNullable
+        public int? WorkPlaceEmpIdNullable
         {
-            get { return workPlaceEmpIdFieldSpecified ? (long?)workPlaceEmpIdField : null; }
+            get { return workPlaceEmpIdFieldSpecified ? (int?)workPlaceEmpIdField : null; }
         }
     }
 }

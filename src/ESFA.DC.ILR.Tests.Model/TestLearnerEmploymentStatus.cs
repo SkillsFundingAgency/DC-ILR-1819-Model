@@ -10,7 +10,7 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public DateTime DateEmpStatApp { get; set; }
 
-        public long? EmpIdNullable { get; set; }
+        public int? EmpIdNullable { get; set; }
 
         public IReadOnlyCollection<IEmploymentStatusMonitoring> EmploymentStatusMonitorings { get; set; }
     }

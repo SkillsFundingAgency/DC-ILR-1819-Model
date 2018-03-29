@@ -13,6 +13,6 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public int WorkPlaceMode { get; set; }
 
-        public long? WorkPlaceEmpIdNullable { get; set; }
+        public int? WorkPlaceEmpIdNullable { get; set; }
     }
 }

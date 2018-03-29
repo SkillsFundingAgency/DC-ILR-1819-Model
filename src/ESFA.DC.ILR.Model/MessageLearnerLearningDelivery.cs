@@ -14,21 +14,21 @@ namespace ESFA.DC.ILR.Model
         }
 
         [XmlIgnore]
-        public long? AddHoursNullable
+        public int? AddHoursNullable
         {
-            get { return addHoursFieldSpecified ? (long?)addHoursField : null; }
+            get { return addHoursFieldSpecified ? (int?)addHoursField : null; }
         }
 
         [XmlIgnore]
-        public long? EmpOutcomeNullable
+        public int? EmpOutcomeNullable
         {
-            get { return empOutcomeFieldSpecified ? (long?)empOutcomeField : null; }
+            get { return empOutcomeFieldSpecified ? (int?)empOutcomeField : null; }
         }
 
         [XmlIgnore]
-        public long? FworkCodeNullable
+        public int? FworkCodeNullable
         {
-            get { return fworkCodeFieldSpecified ? (long?)fworkCodeField : null; }
+            get { return fworkCodeFieldSpecified ? (int?)fworkCodeField : null; }
         }        
 
         [XmlIgnore]
@@ -44,51 +44,51 @@ namespace ESFA.DC.ILR.Model
         }
 
         [XmlIgnore]
-        public long? OtherFundAdjNullable
+        public int? OtherFundAdjNullable
         {
-            get { return otherFundAdjFieldSpecified ? (long?)otherFundAdjField : null; }
+            get { return otherFundAdjFieldSpecified ? (int?)otherFundAdjField : null; }
         }
 
         [XmlIgnore]
-        public long? OutcomeNullable
+        public int? OutcomeNullable
         {
-            get { return outcomeFieldSpecified ? (long?)outcomeField : null; }
+            get { return outcomeFieldSpecified ? (int?)outcomeField : null; }
         }
 
         [XmlIgnore]
-        public long? PartnerUKPRNNullable
+        public int? PartnerUKPRNNullable
         {
-            get { return partnerUKPRNFieldSpecified ? (long?)partnerUKPRNField : null;  }
+            get { return partnerUKPRNFieldSpecified ? (int?)partnerUKPRNField : null;  }
         }
 
         [XmlIgnore]
-        public long? PriorLearnFundAdjNullable
+        public int? PriorLearnFundAdjNullable
         {
-            get { return priorLearnFundAdjFieldSpecified ? (long?)priorLearnFundAdjField : null; }
+            get { return priorLearnFundAdjFieldSpecified ? (int?)priorLearnFundAdjField : null; }
         }
 
         [XmlIgnore]
-        public long? ProgTypeNullable
+        public int? ProgTypeNullable
         {
-            get { return progTypeFieldSpecified ? (long?)progTypeField : null; }
+            get { return progTypeFieldSpecified ? (int?)progTypeField : null; }
         }
 
         [XmlIgnore]
-        public long? PwayCodeNullable
+        public int? PwayCodeNullable
         {
-            get { return pwayCodeFieldSpecified ? (long?)pwayCodeField : null; }
+            get { return pwayCodeFieldSpecified ? (int?)pwayCodeField : null; }
         }
 
         [XmlIgnore]
-        public long? StdCodeNullable
+        public int? StdCodeNullable
         {
-            get { return stdCodeFieldSpecified ? (long?)stdCodeField : null; }
+            get { return stdCodeFieldSpecified ? (int?)stdCodeField : null; }
         }
 
         [XmlIgnore]
-        public long? WithdrawReasonNullable
+        public int? WithdrawReasonNullable
         {
-            get { return withdrawReasonFieldSpecified ? (long?)withdrawReasonField : null;  }
+            get { return withdrawReasonFieldSpecified ? (int?)withdrawReasonField : null;  }
         }
          
         [XmlIgnore]

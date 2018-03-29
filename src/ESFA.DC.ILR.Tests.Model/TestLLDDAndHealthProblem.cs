@@ -6,6 +6,6 @@ namespace ESFA.DC.ILR.Tests.Model
     {
         public int LLDDCat { get; set; }
 
-        public long? PrimaryLLDDNullable { get; set; }
+        public int? PrimaryLLDDNullable { get; set; }
     }
 }

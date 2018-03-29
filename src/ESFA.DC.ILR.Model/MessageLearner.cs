@@ -8,15 +8,15 @@ namespace ESFA.DC.ILR.Model
     public partial class MessageLearner : ILearner
     {
         [XmlIgnore]
-        public long? AccomNullable
+        public int? AccomNullable
         {
-            get { return accomFieldSpecified ? (long?)accomField : null; }
+            get { return accomFieldSpecified ? (int?)accomField : null; }
         }
         
         [XmlIgnore]
-        public long? ALSCostNullable
+        public int? ALSCostNullable
         {
-            get { return aLSCostFieldSpecified ? (long?)aLSCostField : null; }
+            get { return aLSCostFieldSpecified ? (int?)aLSCostField : null; }
         }
 
         [XmlIgnore]
@@ -26,33 +26,33 @@ namespace ESFA.DC.ILR.Model
         }
         
         [XmlIgnore]
-        public long? PlanEEPHoursNullable
+        public int? PlanEEPHoursNullable
         {
-            get { return planEEPHoursFieldSpecified ? (long?)planEEPHoursField : null; }
+            get { return planEEPHoursFieldSpecified ? (int?)planEEPHoursField : null; }
         }
 
         [XmlIgnore]
-        public long? PlanLearnHoursNullable
+        public int? PlanLearnHoursNullable
         {
-            get { return planLearnHoursFieldSpecified ? (long?)planLearnHoursField : null; }
+            get { return planLearnHoursFieldSpecified ? (int?)planLearnHoursField : null; }
         }
         
         [XmlIgnore]
-        public long? PMUKPRNNullable
+        public int? PMUKPRNNullable
         {
-            get { return pMUKPRNFieldSpecified ? (long?)pMUKPRNField : null; }
+            get { return pMUKPRNFieldSpecified ? (int?)pMUKPRNField : null; }
         }
 
         [XmlIgnore]
-        public long? PrevUKPRNNullable
+        public int? PrevUKPRNNullable
         {
-            get { return prevUKPRNFieldSpecified ? (long?)prevUKPRNField : null; }
+            get { return prevUKPRNFieldSpecified ? (int?)prevUKPRNField : null; }
         }
 
         [XmlIgnore]
-        public long? PriorAttainNullable
+        public int? PriorAttainNullable
         {
-            get { return priorAttainFieldSpecified ? (long?)priorAttainField : null; }
+            get { return priorAttainFieldSpecified ? (int?)priorAttainField : null; }
         }
         
         [XmlIgnore]
