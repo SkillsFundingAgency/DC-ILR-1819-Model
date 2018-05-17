@@ -24,7 +24,13 @@ namespace ESFA.DC.ILR.Model
         {
             get { return dateOfBirthFieldSpecified ? (DateTime?)dateOfBirthField : null; }
         }
-        
+
+        [XmlIgnore]
+        public int? OTJHoursNullable
+        {
+            get { return oTJHoursFieldSpecified ? (int?) oTJHoursField : null; }
+        }
+
         [XmlIgnore]
         public int? PlanEEPHoursNullable
         {
