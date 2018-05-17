@@ -5,6 +5,8 @@ namespace ESFA.DC.ILR.Model.Interface
 {
     public interface ILearnerEmploymentStatus
     {
+        string AgreeId { get; }
+
         int EmpStat { get; }
 
         DateTime DateEmpStatApp { get; }

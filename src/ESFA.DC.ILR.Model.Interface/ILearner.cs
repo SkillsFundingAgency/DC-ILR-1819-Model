@@ -17,6 +17,8 @@ namespace ESFA.DC.ILR.Model.Interface
 
         int? ALSCostNullable { get; }
 
+        string CampId { get; }
+
         DateTime? DateOfBirthNullable { get; }
 
         string Email { get; }
@@ -36,6 +38,8 @@ namespace ESFA.DC.ILR.Model.Interface
         string MathGrade { get; }
 
         string NINumber { get; }
+
+        int? OTJHoursNullable { get; }
 
         int? PlanEEPHoursNullable { get; }
 
