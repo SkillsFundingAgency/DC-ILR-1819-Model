@@ -18,6 +18,8 @@ namespace ESFA.DC.ILR.Tests.Model
 
         public int? ALSCostNullable { get; set; }
 
+        public string CampId { get; set; }
+
         public DateTime? DateOfBirthNullable { get; set; }
 
         public string Email { get; set; }
@@ -37,6 +39,8 @@ namespace ESFA.DC.ILR.Tests.Model
         public string MathGrade { get; set; }
 
         public string NINumber { get; set; }
+
+        public int? OTJHoursNullable { get; set; }
 
         public int? PlanEEPHoursNullable { get; set; }
 
